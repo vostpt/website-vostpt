@@ -20,7 +20,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+    <nav class="navbar navbar-expand-md navbar-light navbar-laravel sticky-top">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
                 {{ config('app.name', 'Laravel') }}
