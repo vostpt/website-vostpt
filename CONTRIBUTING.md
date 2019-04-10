@@ -49,6 +49,18 @@ feat(Occurrences): implement API client to fetch occurrence data
 +--------------------> Type: chore, docs, feat, fix, hack, refactor, style, or test.
 ```
 
+Here are some tags to use:
+
+```txt
+feat(): add beta sequence
+fix(): remove broken confirmation message
+refact(): share logic between 4d3d3d3 and flarhgunnstow
+docs(): explain hat wobble
+chore(): add Oyster build script
+style(): convert tabs to spaces
+test(): ensure Tayne retains clothing
+```
+
 ## Branching strategy
 We will be using the **branch-per-issue** workflow.
 
