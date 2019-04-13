@@ -12,9 +12,9 @@
             </div>
 
             <div>
-                <div>@lang('strings.home_text1')</div>
-                <div>@lang('strings.home_text2')</div>
-                <div>@lang('strings.home_text3')</div>
+                <div>@lang('strings.somos_text1')</div>
+                <div>@lang('strings.somos_text2')</div>
+                <div>@lang('strings.somos_text3')</div>
             </div>
         </div>
     </div>
