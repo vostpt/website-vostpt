@@ -9,30 +9,47 @@ return [
     |
     |
     */
-    'missao_titulo1'=> 'A nossa missão',
-    'missao_titulo2'=> 'Difundir mensagens em tempo real',
-    'missao_titulo3'=> 'Recolher.Validar.Informar.',
-    'missao_subtitulo1'=> 'Os VOST Portugal têm como missão primária comunicar e ajudar!',
+    //HOME
+    'home_titulo1' => 'VOST PORTUGAL',
+    'home_titulo2' => 'Quem Somos',
+    'home_titulo3' => 'Missão',
+    'home_titulo4' => 'Objectivos',
+    'home_titulo5' => 'A NOSSA EQUIPA',
+    'home_titulo6' => 'Testemunhos',
+    'home_titulo7' => 'POSTS MAIS RECENTES',
+    'home_titulo8' => 'CONTACTOS',
+    'home_titulo9' => 'CHAT',
+    'home_titulo10' => 'COMO PARTICIPAR',
+    'home_titulo11' => 'INSTITUCIONAL',
+    'home_titulo12' => 'REDES SOCIAIS',
 
-    'somos_subtitulo1'=> 'Ainda bem que perguntas! Para te juntares a nós basta preencheres o formulário abaixo que entraremos em contacto contigo logo a seguir. Obrigado pelo teu interesse em dares o teu contributo.',
-    'somos_subtitulo2'=> 'Saiba mais sobre nós',
-
-    'somos_titulo1'=> 'Quem somos',
-    'somos_titulo2'=> 'SER VOLUNTÁRIO É
-    TRABALHAR PARA A INVISIBILIDADE
-    E SEMPRE COM TRANSPARÊNCIA',
-    'somos_titulo3'=> 'A NOSSA EQUIPA',
-    'somos_titulo4'=> 'FABULOSO!!
-    Como me posso juntar à VOSTPT?',
+    'home_subtitulo1' => 'Voluntários Digitais Em Situações de Emergência',
 
     'home_text1' => 'A VOST Portugal é um grupo de voluntários que actua nas redes sociais com o objectivo de informar a população, promovendo a difusão das mensagens oficiais e canalizando os pedidos das populações às entidades responsáveis em casos de fenómenos meteorológicos adversos ou catástrofes naturais.',
     'home_text2' => 'A realidade mais provável seria  que muitos de nós nunca nos iríamos conhecer, ou estabelecer uma relação de amizade profunda, se não tivéssemos todos, sem excepção, uma qualidade em comum: quando sentimos que outros estão em dificuldades, queremos de imediato ajudar, estabelecendo uma rede de boa vontade com todos os que temos ao nosso alcance para a estender aos que mais precisam.',
     'home_text3' => 'A VOST Portugal tem como missão primária difundir nas redes sociais as comunicações das entidades oficiais e de ajudar todos os afectados, directa ou indirectamente, por uma catástrofe natural, através da partilha de informação validada e actualizada sempre que assim se justificar.',
     'home_text4' => 'O objetivo principal da VOST Portugal é o mesmo das suas congéneres europeias: ser a extensão digital de comunicação das entidades oficiais em caso de fenómenos meteorológicos ou catástrofes naturais e ser um canal de apoio à população encaminhando as situações reportadas às autoridades competentes.',
 
+    //Quem somos
+    'somos_titulo1'=> 'Quem somos',
+    'somos_titulo2'=> 'SER VOLUNTÁRIO É TRABALHAR PARA A INVISIBILIDADE E SEMPRE COM TRANSPARÊNCIA',
+    'somos_titulo3'=> 'A NOSSA EQUIPA',
+    'somos_titulo4'=> 'FABULOSO!!
+    Como me posso juntar à VOSTPT?',
+
+    'somos_subtitulo1'=> 'Ainda bem que perguntas! Para te juntares a nós basta preencheres o formulário abaixo que entraremos em contacto contigo logo a seguir. Obrigado pelo teu interesse em dares o teu contributo.',
+    'somos_subtitulo2'=> 'Saiba mais sobre nós',
+
     'somos_text1' => 'Somos do Norte, do Sul, do Centro, do Litoral, do Interior. Somos mães, filhos, tios, sobrinhos e primos. Somos das grandes cidades, das aldeias que ainda resistem e de algumas que renascem. Somos profissionais estabelecidos, somos estudantes em início de carreira académica, somos engenheiros, psicólogos, empresários, gestores, programadores, meteorologistas amadores, criativos, comunicadores, ex-militares, socorristas, voluntários.',
     'somos_text2' => 'Somos novos, somos de meia idade e alguns até adultos que ainda não deixaram morrer a criança dentro de si.  Somos de esquerda, centro-esquerda, centro-direita, e direita. Somos do Porto, do Sporting, do Benfica, da Académica, do Braga, do Portimonense, do Guimarães, de todos os outros clubes, da selecção Nacional e alguns de nós nem sequer gostam de futebol, preferindo jogar CS:GO ou xadrez. Somos religiosos, ateus, agnósticos. Somos bons pratos, somos vegans, somos amantes de gatos, cães, periquitos. Somos tudo isto, somos muito mais…',
     'somos_text3' => 'A realidade mais provável seria  que muitos de nós nunca nos iríamos conhecer ou estabelecer uma relação de amizade profunda se não tivéssemos todos, sem excepção, uma qualidade em comum: quando sentimos que outros estão em dificuldades, queremos de imediato ajudar, estabelecendo uma rede de boa vontade com todos os que temos ao nosso alcance para a estender aos que mais precisam.',
+
+    //Missao
+    'missao_titulo1'=> 'A nossa missão',
+    'missao_titulo2'=> 'Difundir mensagens em tempo real',
+    'missao_titulo3'=> 'Recolher.Validar.Informar.',
+
+    'missao_subtitulo1'=> 'Os VOST Portugal têm como missão primária comunicar e ajudar!',
 
     'missao_text1' => 'A VOST Portugal têm como missão primária difundir nas redes sociais as comunicações das entidades oficiais e de ajudar todos os afectados, directa ou indirectamente, por uma catástrofe natural através da partilha de informação validada e actualizada sempre que assim se justificar.',
     'missao_text2' => 'As redes sociais são hoje um canal privilegiado para milhões de portugueses e é nelas que vão procurar informação que, depois passam por canais tradicionais aos seus familiares, amigos, vizinhos que, por sua vez amplificam essas mensagens.',
@@ -40,11 +57,36 @@ return [
     'missao_text4' => 'Somos também um veículo natural para reportar situações  pois o capital de confiança adquirido pelo nosso desempenho e o tom próximo com que comunicamos, faz com que os nossos seguidores nos vejam como uma entidade próxima, quase ao nível pessoal, a quem podem pedir ajuda, muitas vezes em caso de desespero depois da tentativa de contacto com os canais oficiais que, por circunstâncias várias não se encontram disponíveis em certos momentos.',
     'missao_text5' => 'Faz também parte da missão da VOST Portugal, enquanto membro do grupo VOSG, dar apoio às suas congéneres internacionais sempre que assim requerido pelas mesmas, especialmente quando se tratem de países em que a comunidade Portuguesa seja significativa.',
 
+    //Objectivos
+    'objectivos_titulo1' => 'Os nossos objectivos',
+    'objectivos_titulo2' => 'PEDAGOGIA',
+    'objectivos_titulo3' => 'REACH OUT',
+    'objectivos_titulo4' => 'PARCERIAS',
+    'objectivos_titulo5' => 'PROTOCOLOS INSTITUCIONAIS',
+    'objectivos_titulo6' => 'INFOEXCLUSÃO',
+
+    'objectivos_subtitulo1' => 'Damos importância à disseminação da informação oficial.',
+    'objectivos_subtitulo2' => 'O objetivo principal da VOST Portugal é o mesmo das suas congéneres europeias: ser a extensão digital de comunicação das entidades oficiais em caso de fenómenos meteorológicos ou catástrofes naturais, e ser um canal de apoio à população encaminhando as situações reportadas às autoridades competentes. Abaixo podem encontrar os nossos objectivos operacionais. ',
+
     'objectivos_text1' => 'Usar o nosso alcance digital para criar uma cultura de partilha responsável e crítica nos nossos seguidores, dando exemplos diários de combate aos rumores que muitas vezes surgem nas redes sociais e ensinando a importância de estar atento aos canais oficiais ao ampliar a mensagem dos mesmos.',
     'objectivos_text2' => 'Estabelecer a nossa presença através de voluntários locais em cada concelho do país ou integrados nas comunidades portuguesas no estrangeiro, para que, em caso de necessidade, estes possam servir como intermediários na comunicação de avisos nas redes sociais específicas de cada comunidade e de receptores de informação validada para a transmitir às entidades envolvidas nestes cenários, em tempo real.',
     'objectivos_text3' => 'O estabelecimento de parcerias com comunidades específicas é da máxima importância para que a informação que chega às populações via redes sociais seja sempre fidedigna e ofereça alternativas em caso de falha das infraestruturas. É também necessário estabelecer  parcerias com o mundo académico, onde o trabalho de voluntariado com a VOST poderá contar para o currículo do aluno.',
     'objectivos_text4' => 'À semelhança das nossas congéneres mundiais, um dos grandes objectivos da VOST Portugal é o de estabelecer os protocolos necessários com a ANPC, as protecções civis locais e municipais - sendo que com algumas já estamos em conversações avançadas -, e todas as outras entidades do estado e privadas que estão envolvidas em casos de fenómenos meteorológicos adversos ou catástrofes. Neste momento a VOST Portugal já tem estabelecido um protocolo de colaboração com a Guarda Nacional republicana, e com a EDP Distribuição, fruto da colaboração com resultados bastante positivos durante o evento #LesliePT',
     'objectivos_text5' => 'Um dos maiores desafios que se coloca hoje em dia é como fazer chegar a informação a todos aqueles que não são nativos digitais e que, normalmente, são de uma faixa etária superior que necessita de mais cuidados e atenção durante um FMA ou catástrofe natural. Encontrar soluções através da tecnologia e do voluntariado digital de proximidade é um dos objectivos da VOST Portugal, contando já com um projecto em fase de estruturação. Também promover uma cultura de partilha oral entre os nativos digitais e a população mais idosa, no seu entorno, usando para isso uma comunicação apelativa e moderna que coloque o foco no fazer bem e ajudar os outros que mais necessitam, é um pilar deste nosso objectivo.',
+
+    //Politica de Priv
+    'politica_titulo1' => 'PRIVACIDADE',
+    'politica_titulo2' => 'TRATAMENTO DE DADOS PESSOAIS',
+    'politica_titulo3' => 'Privacidade',
+    'politica_titulo4' => 'Responsável pelo Tratamento',
+    'politica_titulo5' => 'Tipologia de Dados Pessoais',
+    'politica_titulo6' => 'Acesso e controlo dos Dados Pessoais',
+    'politica_titulo7' => 'Arquivo de Dados Pessoais',
+    'politica_titulo8' => 'Cookies e Tecnologias Semelhantes',
+    'politica_titulo9' => 'Exoneração de Responsabilidade',
+
+    'politica_subtitulo1' => 'COMO USAMOS OS DADOS QUE NOS FORNECES E OUTRAS LEGALIDADES',
+    'politica_subtitulo2' => 'Informação relacionada com o tratamento de dados pessoais.',
 
     'politica_text1' => 'A VOST PORTUGAL, doravante VOST PT, garante que proteção de dados pessoais e respetiva privacidade é uma prioridade e um compromisso de todos os que fazem parte deste projeto. Esta máxima aplica-se não só ao trabalho desenvolvido nas contas das redes sociais como em todas as plataformas que futuramente a equipa venha a utilizar, com especial foco no site.
     Todo e qualquer dado pessoal fornecido será tratado com a segurança e confidencialidade estipuladas no enquadramento legal relativo à proteção de dados pessoais.
