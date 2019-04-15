@@ -54,3 +54,16 @@ if (token) {
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+//switch navbar theme depending on scroll position
+$(window).scroll(function(){
+    let scrollPos = $(window).scrollTop();
+
+    if (scrollPos >= 100) {
+        $('.navbar-laravel').removeClass('navbar-dark');
+        $('.navbar-laravel').addClass('navbar-light');
+    } else {
+        $('.navbar-laravel').removeClass('navbar-light');
+        $('.navbar-laravel').addClass('navbar-dark');
+    }
+});
