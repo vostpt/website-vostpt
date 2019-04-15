@@ -16,6 +16,17 @@ Generate an encryption key:
 php artisan key:generate
 ```
 
+create symbolic link to storage folder
+```sh
+php artisan storage:link
+```
+>:warning: here you should download all assests into the storage folder
+
+install npm packages
+```sh
+npm install && npm run dev
+```
+
 ### Database
 Execute the migration and seeders:
 ```sh
