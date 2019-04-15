@@ -59,7 +59,7 @@ if (token) {
 $(window).scroll(function(){
     let scrollPos = $(window).scrollTop();
 
-    if (scrollPos >= 100) {
+    if (scrollPos >= 1) {
         $('.navbar-laravel').removeClass('navbar-dark');
         $('.navbar-laravel').addClass('navbar-light');
     } else {
