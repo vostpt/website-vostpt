@@ -4,7 +4,8 @@
     <div class="flex-center position-ref full-height">
         <div class="content">
             <div class="title marigin-bottom-md">
-                {{ config('app.name', 'Laravel') }}
+                @lang('strings.somos_titulo1')
+                @lang('strings.somos_subtitulo1')
             </div>
 
             <div class="links">
@@ -12,9 +13,14 @@
             </div>
 
             <div>
-                <div>@lang('strings.somos_text1')</div>
-                <div>@lang('strings.somos_text2')</div>
-                <div>@lang('strings.somos_text3')</div>
+                <h2>@lang('strings.somos_titulo2')</h2>
+                @lang('strings.somos_text1')
+                @lang('strings.somos_text2')
+                @lang('strings.somos_text3')
+
+                <h2>@lang('strings.somos_titulo3')</h2>
+                <h2>@lang('strings.somos_titulo4')</h2>
+                @lang('strings.somos_subtitulo2')
             </div>
         </div>
     </div>
