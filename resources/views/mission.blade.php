@@ -12,9 +12,11 @@
             </div>
 
             <div>
-                <div>@lang('strings.home_text1')</div>
-                <div>@lang('strings.home_text2')</div>
-                <div>@lang('strings.home_text3')</div>
+                <div>@lang('strings.missao_text1')</div>
+                <div>@lang('strings.missao_text2')</div>
+                <div>@lang('strings.missao_text3')</div>
+                <div>@lang('strings.missao_text4')</div>
+                <div>@lang('strings.missao_text5')</div>
             </div>
         </div>
     </div>

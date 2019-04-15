@@ -11,3 +11,12 @@ npm-debug.log
 yarn-error.log
 /public/css/app.css
 /public/js/app.js
+
+# IntelliJ project files
+*.iml
+*.iws
+*.ipr
+.idea/
+
+#VScode project files
+.favorites\.json
