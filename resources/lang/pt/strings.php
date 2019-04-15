@@ -34,11 +34,10 @@ return [
     'somos_titulo1'=> 'Quem somos',
     'somos_titulo2'=> 'SER VOLUNTÁRIO É TRABALHAR PARA A INVISIBILIDADE E SEMPRE COM TRANSPARÊNCIA',
     'somos_titulo3'=> 'A NOSSA EQUIPA',
-    'somos_titulo4'=> 'FABULOSO!!
-    Como me posso juntar à VOSTPT?',
+    'somos_titulo4'=> 'FABULOSO!! Como me posso juntar à VOSTPT?',
 
-    'somos_subtitulo1'=> 'Ainda bem que perguntas! Para te juntares a nós basta preencheres o formulário abaixo que entraremos em contacto contigo logo a seguir. Obrigado pelo teu interesse em dares o teu contributo.',
-    'somos_subtitulo2'=> 'Saiba mais sobre nós',
+    'somos_subtitulo1'=> 'Saiba mais sobre nós',
+    'somos_subtitulo2'=> 'Ainda bem que perguntas! Para te juntares a nós basta preencheres o formulário abaixo que entraremos em contacto contigo logo a seguir. Obrigado pelo teu interesse em dares o teu contributo.',
 
     'somos_text1' => 'Somos do Norte, do Sul, do Centro, do Litoral, do Interior. Somos mães, filhos, tios, sobrinhos e primos. Somos das grandes cidades, das aldeias que ainda resistem e de algumas que renascem. Somos profissionais estabelecidos, somos estudantes em início de carreira académica, somos engenheiros, psicólogos, empresários, gestores, programadores, meteorologistas amadores, criativos, comunicadores, ex-militares, socorristas, voluntários.',
     'somos_text2' => 'Somos novos, somos de meia idade e alguns até adultos que ainda não deixaram morrer a criança dentro de si.  Somos de esquerda, centro-esquerda, centro-direita, e direita. Somos do Porto, do Sporting, do Benfica, da Académica, do Braga, do Portimonense, do Guimarães, de todos os outros clubes, da selecção Nacional e alguns de nós nem sequer gostam de futebol, preferindo jogar CS:GO ou xadrez. Somos religiosos, ateus, agnósticos. Somos bons pratos, somos vegans, somos amantes de gatos, cães, periquitos. Somos tudo isto, somos muito mais…',
@@ -88,40 +87,12 @@ return [
     'politica_subtitulo1' => 'COMO USAMOS OS DADOS QUE NOS FORNECES E OUTRAS LEGALIDADES',
     'politica_subtitulo2' => 'Informação relacionada com o tratamento de dados pessoais.',
 
-    'politica_text1' => 'A VOST PORTUGAL, doravante VOST PT, garante que proteção de dados pessoais e respetiva privacidade é uma prioridade e um compromisso de todos os que fazem parte deste projeto. Esta máxima aplica-se não só ao trabalho desenvolvido nas contas das redes sociais como em todas as plataformas que futuramente a equipa venha a utilizar, com especial foco no site.
-    Todo e qualquer dado pessoal fornecido será tratado com a segurança e confidencialidade estipuladas no enquadramento legal relativo à proteção de dados pessoais.
-    A utilização das plataformas da VOST PT é livre e é assumido pela entidade gestora que é feita de acordo com os Termos e Condições da sua utilização, lidos e compreendidos pelos utilizadores.
-    Quaisquer tentativas de alterar a informação, ou qualquer outra ação que possa causar dano e pôr em risco a integridade do sistema, são estritamente proibidas de acordo com a legislação em vigor.
-    O utilizador deste site obriga-se a cumprir escrupulosamente a legislação aplicável, nomeadamente, em matéria de criminalidade informática e de direitos de propriedade intelectual, sendo exclusivamente responsável pela infração destes normativos.',
-    'politica_text2' => 'Para se proceder à interação com as plataformas da VOST PT não é exigida qualquer informação do utilizador, exceto quando o registo seja declarado necessário e por si autorizado.
-    O seu direito à privacidade é respeitado pela VOST PT e não é recolhida qualquer informação pessoal sem o seu consentimento expresso.',
-    'politica_text3' => 'A VOST PT enquanto responsável pelo tratamento de dados:
-    Assegura que o tratamento dos seus dados pessoais é efetuado apenas no âmbito das finalidades para as quais os mesmos foram recolhidos ou para finalidades compatíveis com aquelas;
-    Recolhe, utiliza e conserva apenas os dados pessoais mínimos, necessários e suficientes para a finalidade em causa;
-    Não procede a qualquer transmissão de dados pessoais para fins comerciais ou de publicidade;
-    Trata os dados pessoais para fins legalmente previstos ou para a prossecução de serviços online a seu pedido.',
-    'politica_text4' => 'Os dados pessoais recolhidos são diversos e têm como finalidade o contacto direto com os utilizadores registados no site de forma a obter informação de proveito particular para os interesses da VOST PT.
-    Tendo em conta essa necessidade, os dados recolhidos são os constantes na nossa página https://vost.pt/vost-quem-somos/ para efeitos de eligibilidade como voluntário da VOST PT.',
-    'politica_text5' => 'Possibilitamos, a seu pedido, o acesso, a retificação e o apagamento dos dados pessoais. Tem também o direito de se opor ao processamento dos seus dados pessoais.
-
-    Caso a utilização dos seus dados pessoais seja baseada no consentimento, tem o direito de o retirar, sem comprometer a validade do tratamento de dados efetuado até esse momento.
-
-    Através do contacto vostpt@vostpt.pt pode solicitar:
-    Informação acerca dos seus dados;
-    Informação acerca do processamento;
-    A finalidade subjacente ao tratamento;
-    A correção, ou atualização, de algum dado;
-    Os seus dados num formato aberto;
-    O apagamento total dos dados',
-    'politica_text6' => 'Os seus dados pessoais são conservados pela VOST PT pelo período estritamente necessário ao tratamento, de acordo com a finalidade respectiva.
-    Os períodos de conservação podem alterar-se de acordo com o interesse público associado, motivos históricos, científicos ou estatísticos que o justifiquem, comprometendo-se a VOST PT a adotar as adequadas medidas de conservação e segurança.',
+    'politica_text1' => 'A VOST PORTUGAL, doravante VOST PT, garante que proteção de dados pessoais e respetiva privacidade é uma prioridade e um compromisso de todos os que fazem parte deste projeto. Esta máxima aplica-se não só ao trabalho desenvolvido nas contas das redes sociais como em todas as plataformas que futuramente a equipa venha a utilizar, com especial foco no site. Todo e qualquer dado pessoal fornecido será tratado com a segurança e confidencialidade estipuladas no enquadramento legal relativo à proteção de dados pessoais. A utilização das plataformas da VOST PT é livre e é assumido pela entidade gestora que é feita de acordo com os Termos e Condições da sua utilização, lidos e compreendidos pelos utilizadores. Quaisquer tentativas de alterar a informação, ou qualquer outra ação que possa causar dano e pôr em risco a integridade do sistema, são estritamente proibidas de acordo com a legislação em vigor. O utilizador deste site obriga-se a cumprir escrupulosamente a legislação aplicável, nomeadamente, em matéria de criminalidade informática e de direitos de propriedade intelectual, sendo exclusivamente responsável pela infração destes normativos.',
+    'politica_text2' => 'Para se proceder à interação com as plataformas da VOST PT não é exigida qualquer informação do utilizador, exceto quando o registo seja declarado necessário e por si autorizado. O seu direito à privacidade é respeitado pela VOST PT e não é recolhida qualquer informação pessoal sem o seu consentimento expresso.',
+    'politica_text3' => 'A VOST PT enquanto responsável pelo tratamento de dados: Assegura que o tratamento dos seus dados pessoais é efetuado apenas no âmbito das finalidades para as quais os mesmos foram recolhidos ou para finalidades compatíveis com aquelas; Recolhe, utiliza e conserva apenas os dados pessoais mínimos, necessários e suficientes para a finalidade em causa; Não procede a qualquer transmissão de dados pessoais para fins comerciais ou de publicidade; Trata os dados pessoais para fins legalmente previstos ou para a prossecução de serviços online a seu pedido.',
+    'politica_text4' => 'Os dados pessoais recolhidos são diversos e têm como finalidade o contacto direto com os utilizadores registados no site de forma a obter informação de proveito particular para os interesses da VOST PT. Tendo em conta essa necessidade, os dados recolhidos são os constantes na nossa página https://vost.pt/vost-quem-somos/ para efeitos de eligibilidade como voluntário da VOST PT.',
+    'politica_text5' => 'Possibilitamos, a seu pedido, o acesso, a retificação e o apagamento dos dados pessoais. Tem também o direito de se opor ao processamento dos seus dados pessoais. Caso a utilização dos seus dados pessoais seja baseada no consentimento, tem o direito de o retirar, sem comprometer a validade do tratamento de dados efetuado até esse momento. Através do contacto vostpt@vostpt.pt pode solicitar: Informação acerca dos seus dados; Informação acerca do processamento; A finalidade subjacente ao tratamento; A correção, ou atualização, de algum dado; Os seus dados num formato aberto; O apagamento total dos dados',
+    'politica_text6' => 'Os seus dados pessoais são conservados pela VOST PT pelo período estritamente necessário ao tratamento, de acordo com a finalidade respectiva. Os períodos de conservação podem alterar-se de acordo com o interesse público associado, motivos históricos, científicos ou estatísticos que o justifiquem, comprometendo-se a VOST PT a adotar as adequadas medidas de conservação e segurança.',
     'politica_text7' => 'A VOST PT utiliza no seu sítio eletrónico cookies de forma a melhorar o desempenho e a experiência de navegação dos seus utilizadores, aumentando a rapidez e eficiência de resposta.',
-    'politica_text8' => 'A VOST PT não poderá ser responsabilizada por quaisquer prejuízos ou danos em sede de responsabilidade civil (incluindo, mas sem que a estes estejam limitados, danos emergentes, lucros cessantes e danos morais, causados direta ou indiretamente), que surjam em consequência da utilização, correta ou incorreta dos seus sítios eletrónicos e respetivos conteúdos por parte do utilizador, do acesso ao computador e sistema informático do utilizador por terceiros.
-    A informação divulgada deve ser encarada na sua vertente informativa.
-    Apesar dos esforços da VOST PT em manter os conteúdos atualizados e fidedignos, estes podem conter incorreções, erros de escrita ou estar desatualizados, pelo que não poderá a VOST PT ser responsabilizada no que respeita à completa exatidão e atualidade de qualquer informação constante dos seus sítios.
-    Os sítios eletrónicos podem conter ligações para sítios operados por entidades terceiras sobre os quais não tem controlo e pelos quais não assume qualquer responsabilidade.
-    A visualização de disposições legais neste sítio, não dispensa a consulta das normas legais em vigor, aprovadas oficialmente, publicadas nas edições e suportes originais (nomeadamente o Diário da República ou o Jornal Oficial da União Europeia).
-
-    Data da última atualização da política de privacidade:
-    26 de outubro de 2018',
+    'politica_text8' => 'A VOST PT não poderá ser responsabilizada por quaisquer prejuízos ou danos em sede de responsabilidade civil (incluindo, mas sem que a estes estejam limitados, danos emergentes, lucros cessantes e danos morais, causados direta ou indiretamente), que surjam em consequência da utilização, correta ou incorreta dos seus sítios eletrónicos e respetivos conteúdos por parte do utilizador, do acesso ao computador e sistema informático do utilizador por terceiros. A informação divulgada deve ser encarada na sua vertente informativa. Apesar dos esforços da VOST PT em manter os conteúdos atualizados e fidedignos, estes podem conter incorreções, erros de escrita ou estar desatualizados, pelo que não poderá a VOST PT ser responsabilizada no que respeita à completa exatidão e atualidade de qualquer informação constante dos seus sítios. Os sítios eletrónicos podem conter ligações para sítios operados por entidades terceiras sobre os quais não tem controlo e pelos quais não assume qualquer responsabilidade. A visualização de disposições legais neste sítio, não dispensa a consulta das normas legais em vigor, aprovadas oficialmente, publicadas nas edições e suportes originais (nomeadamente o Diário da República ou o Jornal Oficial da União Europeia). Data da última atualização da política de privacidade: 26 de outubro de 2018',
 ];

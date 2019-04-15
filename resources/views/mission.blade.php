@@ -4,7 +4,8 @@
     <div class="flex-center position-ref full-height">
         <div class="content">
             <div class="title marigin-bottom-md">
-                {{ config('app.name', 'Laravel') }}
+                @lang('strings.missao_titulo1')
+                @lang('strings.missao_subtitulo1')
             </div>
 
             <div class="links">
@@ -12,11 +13,13 @@
             </div>
 
             <div>
-                <div>@lang('strings.missao_text1')</div>
-                <div>@lang('strings.missao_text2')</div>
-                <div>@lang('strings.missao_text3')</div>
-                <div>@lang('strings.missao_text4')</div>
-                <div>@lang('strings.missao_text5')</div>
+                <h2> @lang('strings.missao_titulo2')</h2>
+                @lang('strings.missao_text1')
+                @lang('strings.missao_text2')
+                @lang('strings.missao_text3')
+                <h2> @lang('strings.missao_titulo3')</h2>
+                @lang('strings.missao_text4')
+                @lang('strings.missao_text5')
             </div>
         </div>
     </div>
