@@ -1,19 +1,31 @@
-
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,600");
 
 // Variables
-@import 'variables';
+@import "variables";
 @import "helpers";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
- // Pages
- @import "pages/welcome";
+// Pages
+@import "pages/welcome";
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+// Bootstrap overrides
+.navbar-light {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    transition: all 150ms ease;
+}
+
+.navbar-dark {
+    transition: all 150ms ease;
+    .navbar-nav .nav-link {
+        color: white;
+    }
+
+    .collapsing .navbar-nav .nav-link {
+        color: transparent;
+    }
 }
