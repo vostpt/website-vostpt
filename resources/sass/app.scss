@@ -20,7 +20,12 @@
 }
 
 .navbar-dark {
+    transition: all 150ms ease;
     .navbar-nav .nav-link {
         color: white;
+    }
+
+    .collapsing .navbar-nav .nav-link {
+        color: transparent;
     }
 }
