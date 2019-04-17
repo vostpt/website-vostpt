@@ -1,14 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+    @include('components.hero', ['title' =>  __('strings.politica_titulo1'), 'subtitle' => __('strings.politica_subtitulo1'), 'image' => asset('storage/VOSTSITE_0052.jpg')])
     <div class="flex-center position-ref full-height">
         <div class="content">
-            <div class="title marigin-bottom-md">
-                @lang('strings.politica_titulo1')
-                <br>
-                @lang('strings.politica_subtitulo1')
-            </div>
-
             <div class="links">
                 <a href="https://github.com/vostpt">github</a>
             </div>

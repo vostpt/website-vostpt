@@ -1,13 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+
+    @include('components.hero', ['title' =>  __('strings.home_titulo1'), 'subtitle' => __('strings.home_subtitulo1'), 'image' => asset('storage/VOSTSITE_0052.jpg')])
+
     <div class="flex-center position-ref full-height">
         <div class="content">
-            <div class="title marigin-bottom-md">
-                @lang('strings.home_titulo1')
-                @lang('strings.home_subtitulo1')
-            </div>
-
             <div class="links">
                 <a href="https://github.com/vostpt">github</a>
             </div>
