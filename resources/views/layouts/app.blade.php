@@ -21,8 +21,9 @@
 </head>
 <body>
     @include('components.navbar')
+    @include('components.hero', ['title' =>  $title, 'subtitle' => $subtitle, 'image' => $image])
     <div id="app">
-        <main>
+        <main class="main">
             @yield('content')
         </main>
     </div>

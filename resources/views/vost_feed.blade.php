@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="flex-center position-ref full-height">
+    <div class="main__body main__body--raised flex-center position-ref full-height">
         <div class="content">
             <div class="title marigin-bottom-md">
                 {{ config('app.name', 'Laravel') }}
