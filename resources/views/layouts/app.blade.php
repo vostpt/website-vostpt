@@ -21,6 +21,7 @@
 </head>
 <body>
     @include('components.navbar')
+    @include('components.hero', ['title' =>  $title, 'subtitle' => $subtitle, 'image' => $image])
     <div id="app">
         <main class="main">
             @yield('content')
