@@ -11,6 +11,7 @@ npm-debug.log
 yarn-error.log
 /public/css/app.css
 /public/js/app.js
+/public/fonts/vendor/
 
 # IntelliJ project files
 *.iml
