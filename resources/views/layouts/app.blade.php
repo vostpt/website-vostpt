@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ asset('storage/favicon-32x32.png') }}">
 </head>
 <body>
     @include('components.navbar')
