@@ -18,11 +18,13 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ asset('storage/favicon-32x32.png') }}">
 </head>
 <body>
     @include('components.navbar')
+    @include('components.hero', ['title' =>  $title, 'subtitle' => $subtitle, 'image' => $image])
     <div id="app">
-        <main class="py-4">
+        <main class="main">
             @yield('content')
         </main>
     </div>
