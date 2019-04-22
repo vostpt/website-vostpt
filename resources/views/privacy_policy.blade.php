@@ -7,7 +7,7 @@
                 <a href="https://github.com/vostpt">github</a>
             </div>
 
-            <div>
+            <div class="text-left">
                 @lang('strings.politica_subtitulo2')
 
                 <h2>@lang('strings.politica_titulo2')</h2>
