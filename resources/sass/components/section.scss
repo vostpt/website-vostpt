@@ -1,0 +1,11 @@
+.section {
+    h2 {
+        color: #3c4858;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 25px;
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 10px;
+        }
+    }
+}
