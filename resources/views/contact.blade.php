@@ -7,10 +7,6 @@
                 {{ config('app.name', 'Laravel') }}
             </div>
 
-            <div class="links">
-                <a href="https://github.com/vostpt">github</a>
-            </div>
-
             <div>
 
             </div>
