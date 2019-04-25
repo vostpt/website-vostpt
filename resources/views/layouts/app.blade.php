@@ -25,7 +25,9 @@
     @include('components.hero', ['title' =>  $title, 'subtitle' => $subtitle, 'image' => $image])
     <div id="app">
         <main class="main">
-            @yield('content')
+            <div class="main__body main__body--raised position-ref">
+                @yield('content')
+            </div>
         </main>
     </div>
 </body>
