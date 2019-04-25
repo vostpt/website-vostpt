@@ -3,15 +3,15 @@
 @section('content')
     <div class="main__body main__body--raised flex-center position-ref">
         <div class="container">
-            <div class="links">
-                <a href="https://github.com/vostpt">github</a>
-            </div>
-
             <div>
-                <h2>@lang('strings.somos_titulo2')</h2>
-                @lang('strings.somos_text1')
-                @lang('strings.somos_text2')
-                @lang('strings.somos_text3')
+                @include('components.column', [
+                    'sectionTitle' =>  __('strings.somos_titulo2'),
+                    'columnDescriptions' => [
+                        __('strings.somos_text1'),
+                        __('strings.somos_text2'),
+                        __('strings.somos_text3')
+                    ]
+                ])
 
                 <h2>@lang('strings.somos_titulo3')</h2>
                 <h2>@lang('strings.somos_titulo4')</h2>
