@@ -1,0 +1,261 @@
+.footer {
+    background: $white;
+    &.footer-big {
+        color: $color_mountain_mist_approx;
+        padding: 30px 0 18px;
+        text-align: center;
+        h5 {
+            font-weight: 700;
+            color: $color_oxford_blue_approx;
+            text-decoration: none;
+            word-wrap: break-word;
+        }
+        ul {
+            margin-bottom: 0;
+            padding: 0;
+            list-style: none;
+            li a {
+                font-weight: 500;
+                display: inline-block;
+                position: relative;
+                padding: 5px 0;
+                border-radius: 3px;
+                text-decoration: none;
+                text-transform: uppercase;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        p {
+            color: $color_mountain_mist_approx;
+        }
+        .copyright {
+            padding: 15px 0;
+        }
+        .content {
+            text-align: left;
+        }
+        hr {
+            margin-top: 10px;
+        }
+        .footer-menu li {
+            display: inline-block;
+            a {
+                padding: 15px;
+            }
+        }
+    }
+    &.footer-black {
+        background: $color_tuatara_approx;
+        a {
+            opacity: 0.86;
+            color: $white;
+            &:hover {
+                opacity: 1;
+            }
+            &:focus {
+                opacity: 1;
+            }
+        }
+        h5 {
+            color: $white;
+        }
+        .copyright {
+            color: $white;
+        }
+        hr {
+            border-color: $white_20;
+        }
+    }
+    h5 {
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 1.618;
+        margin-bottom: 15px;
+    }
+    a {
+        transition: all 0.3s ease;
+        color: $color_razzmatazz_approx;
+        &:hover {
+            color: $color_violet_eggplant_approx;
+            text-decoration: none;
+        }
+        &:focus {
+            color: $color_violet_eggplant_approx;
+            text-decoration: none;
+        }
+        &:not(.btn) {
+            transition: 0.3s ease;
+            &:not(.button):not(.added_to_cart):hover {
+                opacity: 0.75;
+            }
+        }
+    }
+    ul {
+        line-height: 1.618;
+        margin-bottom: 30px;
+        &.light li.tweets_avatar {
+            background: none;
+            border: none;
+            box-shadow: none;
+            color: $white;
+            padding: 0;
+            position: relative;
+            line-height: 1;
+            .tweet_data {
+                color: $color_mountain_mist_approx;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 21px;
+                padding-left: 23px;
+                &:before {
+                    content: "\f099";
+                    display: inline-block;
+                    font: normal normal normal 14px/1 FontAwesome;
+                    text-rendering: auto;
+                    color: $white;
+                    font-size: 16px;
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                }
+                &.facebook:before {
+                    content: "\f09a";
+                }
+            }
+        }
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .container {
+        max-width: 100%;
+        &:before {
+            content: " ";
+            display: table;
+        }
+        &:after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+    }
+    .row {
+        &:before {
+            content: " ";
+            display: table;
+        }
+        &:after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+    }
+    .footer-menu a {
+        font-size: 12px;
+    }
+    .widget {
+        margin-bottom: 30px;
+        word-break: break-word;
+        h5 {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+        ul {
+            padding: 0 0 0 10px;
+            margin: 0;
+            li {
+                line-height: 2.4;
+                padding-top: 5px;
+                &:first-child {
+                    padding-top: 0;
+                }
+            }
+        }
+        a:hover {
+            color: $color_razzmatazz_approx;
+        }
+    }
+    .bottom-footer-content {
+        position: relative;
+    }
+    .gallery {
+        margin: auto;
+        .gallery-item {
+            padding: 5px;
+            float: left;
+            margin-top: 10px;
+            text-align: center;
+            width: 25%;
+        }
+        img {
+            border: none;
+            border-radius: 6px;
+            box-shadow: 0 16px 38px -12px $black_56, 0 4px 25px 0 $black_12,
+                0 8px 10px -5px $black_20;
+        }
+    }
+    .fetched_tweets {
+        &.light .tweets_avatar .tweet_data a {
+            color: $color_mountain_mist_approx;
+            padding: 0;
+        }
+        div.times {
+            float: left;
+            display: none;
+        }
+    }
+    @media (max-width: 768px) {
+        h5 {
+            font-size: 21px;
+        }
+
+        &.footer-big {
+            padding: 30px 0 26px;
+        }
+        .footer-menu {
+            width: 100%;
+        }
+        .copyright {
+            float: none;
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        hr {
+            margin-top: 0;
+        }
+        .container {
+            max-width: 750px;
+        }
+    }
+    @media (min-width: 749px) {
+        .container {
+            max-width: 748px;
+        }
+    }
+    @media (min-width: 992px) {
+        .container {
+            max-width: 970px;
+        }
+
+        .content {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        .col-md-4 {
+            padding: 0 30px;
+        }
+    }
+    @media (min-width: 1200px) {
+        .container {
+            width: 1170px;
+            max-width: 2000px;
+        }
+    }
+}

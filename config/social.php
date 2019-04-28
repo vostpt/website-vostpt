@@ -5,5 +5,6 @@ return [
     'twitter' => 'https://twitter.com/vostpt',
     'instagram' => 'https://www.instagram.com/vostpt/',
     'reddit' => 'https://reddit.com/u/vostpt',
-    'discord' => 'https://discord.gg/ScvE5tR'
+    'discord' => 'https://discord.gg/ScvE5tR',
+    'websiteTeam' => 'https://github.com/vostpt/website-vostpt/graphs/contributors',
 ];
