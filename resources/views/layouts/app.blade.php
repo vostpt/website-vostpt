@@ -27,6 +27,7 @@
         <main class="main">
             <div class="main__body main__body--raised position-ref">
                 @yield('content')
+                @include('components.footer')
             </div>
         </main>
     </div>
