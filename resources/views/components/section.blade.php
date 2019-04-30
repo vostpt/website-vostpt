@@ -3,11 +3,11 @@ style="{{!isset($paralaxImage)?:"background-image: linear-gradient(rgba(0, 0, 0,
 >
     <div class="container">
         @isset ($sectionTitle)
-            <h2>{{Str::upper($sectionTitle)}}</h2>
+            <h2 class="section__title">{{Str::upper($sectionTitle)}}</h2>
         @endisset
 
         @isset ($sectionSubtitle)
-            <p>{!! $sectionSubtitle !!}</p>
+            <p class="section__subtitle">{!! $sectionSubtitle !!}</p>
         @endisset
         <div class="row">
             @yield('sectionContent')
