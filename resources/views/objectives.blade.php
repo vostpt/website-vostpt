@@ -7,7 +7,7 @@
 
     @include('components.iconCard', [
         'columnMax' => 2,
-        'iconCards' => [
+        'cards' => [
             ['fontClass' =>  'fa fa-battery-quarter', 'title' => __('strings.objectivos_titulo2'), 'body' => __('strings.objectivos_text1')],
             ['fontClass' =>  'fa fa-battery-half', 'title' => __('strings.objectivos_titulo3'), 'body' => __('strings.objectivos_text2')],
             ['fontClass' =>  'fa fa-battery-three-quarters', 'title' => __('strings.objectivos_titulo4'), 'body' => __('strings.objectivos_text3')],

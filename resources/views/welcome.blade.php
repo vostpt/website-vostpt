@@ -7,7 +7,7 @@
 
     @include('components.iconCard', [
         'paralaxImage' => asset('storage/VOSTSITE_0060.jpg'),
-        'iconCards' => [
+        'cards' => [
             ['fontClass' =>  'fa fa-users', 'title' => __('strings.home_titulo2'), 'body' => __('strings.home_text2')],
             ['fontClass' =>  'fa fa-check', 'title' => __('strings.home_titulo3'), 'body' => __('strings.home_text3')],
             ['fontClass' =>  'fa fa-wrench', 'title' => __('strings.home_titulo4'), 'body' => __('strings.home_text4')]
