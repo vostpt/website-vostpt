@@ -11,6 +11,18 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        $faker = Faker\Factory::create();
+
+        $limit = 33;
+
+        //seed members
+        for ($i = 0; $i < $limit; $i++) {
+            DB::table('members')->insert([
+                'name' => $faker->name,
+                'role' => $faker->jobTitle,
+                'bio' => $faker->paragraph,
+                'avatar' => 'https://loremflickr.com/320/240/people?lock='.$i
+            ]);
+        }
     }
 }
