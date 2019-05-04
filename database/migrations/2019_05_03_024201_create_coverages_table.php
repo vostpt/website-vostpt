@@ -16,6 +16,12 @@ class CreateCoveragesTable extends Migration
         Schema::create('coverages', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
+
+            $table->string('title');
+            $table->string('url');
+            $table->string('socialHandle');
+            $table->string('socialUrl');
+            $table->string('avatar');
         });
     }
 
