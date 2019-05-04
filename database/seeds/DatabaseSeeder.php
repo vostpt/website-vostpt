@@ -12,7 +12,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $faker = Faker\Factory::create();
-
+        $faker->seed(1234);
         $limit = 33;
 
         //seed members
@@ -20,8 +20,39 @@ class DatabaseSeeder extends Seeder
             DB::table('members')->insert([
                 'name' => $faker->name,
                 'role' => $faker->jobTitle,
-                'bio' => $faker->paragraph,
-                'avatar' => 'https://loremflickr.com/320/240/people?lock='.$i
+                'bio' => $faker->text(280),
+                'avatar' => 'https://loremflickr.com/320/240/people?lock=' . $i
+            ]);
+        }
+
+        //seed coverages
+        for ($i = 0; $i < $limit; $i++) {
+            DB::table('coverages')->insert([
+                'title' => $faker->sentence,
+                'url' => $faker->url,
+                'socialUrl' => $faker->url,
+                'socialHandle' => '@' . $faker->userName,
+                'avatar' => 'https://loremflickr.com/320/240/logo?lock=' . $i
+            ]);
+        }
+
+        //seed testimonials
+        for ($i = 0; $i < $limit; $i++) {
+            DB::table('testimonials')->insert([
+                'socialUrl' => $faker->url,
+                'socialHandle' => '@' . $faker->userName,
+                'body' => $faker->text(280),
+                'avatar' => 'https://loremflickr.com/320/240/people?lock=' . ($i + $limit)
+            ]);
+        }
+
+        //seed posts
+        for ($i = 0; $i < $limit; $i++) {
+            DB::table('posts')->insert([
+                'title' => $faker->sentence,
+                'author' => $faker->name,
+                'body' => implode(' ', $faker->paragraphs),
+                'cover' => 'https://loremflickr.com/320/240/landscape?lock=' . $i
             ]);
         }
     }
