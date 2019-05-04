@@ -16,6 +16,11 @@ class CreateTestimonialsTable extends Migration
         Schema::create('testimonials', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
+
+            $table->string('avatar');
+            $table->string('socialUrl');
+            $table->string('socialHandle');
+            $table->text('body');
         });
     }
 
