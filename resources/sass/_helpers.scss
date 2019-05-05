@@ -2,6 +2,10 @@
     height: calc(100vh - 73px);
 }
 
+.half-height {
+    height: calc(75vh - 73px);
+}
+
 .flex-center {
     align-items: center;
     display: flex;
