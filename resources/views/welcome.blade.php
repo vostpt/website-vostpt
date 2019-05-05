@@ -20,8 +20,10 @@
     @include('components.empty',[
         'sectionTitle' => __('strings.home_titulo6')
     ])
-    @include('components.empty',[
-        'sectionTitle' => __('strings.home_titulo7')
+    @include('components.cardDeck', [
+        'sectionTitle' => __('strings.home_titulo7'),
+        'columnMax' => 3,
+        'cards' => $posts
     ])
     @include('components.empty',[
         'sectionTitle' => __('strings.home_titulo8')
