@@ -16,6 +16,7 @@ Route::get('quem', 'WhoAreWeController@index')->name('who_are_we');
 Route::get('missao', 'MissionController@index')->name('mission');
 Route::get('objectivos', 'ObjectivesController@index')->name('objectives');
 Route::get('blog', 'BlogController@index')->name('blog');
+Route::get('/blog/{id}', 'BlogController@show')->name('blog.show');
 Route::get('feed', 'FeedController@index')->name('vost_feed');
 Route::get('contacto', 'ContactController@index')->name('contact');
 Route::get('media', 'MediaController@index')->name('media');
