@@ -25,6 +25,6 @@ class BlogController extends Controller
     public function show($id)
     {
         $post = Post::find($id);
-        return view('blog.show', ['title' =>  $post->title, 'subtitle' => $post->author, 'image' => $post->cover, 'body' => $post->body]);
+        return view('blog.show', ['title' =>  $post->title, 'subtitle' => $post->author, 'image' => $post->cover, 'body' => $post->body, 'halfHeight' => true]);
     }
 }

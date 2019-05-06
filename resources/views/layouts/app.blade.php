@@ -22,7 +22,7 @@
 </head>
 <body>
     @include('components.navbar')
-    @include('components.hero', ['title' =>  $title, 'subtitle' => $subtitle, 'image' => $image])
+    @include('components.hero', ['title' =>  $title, 'subtitle' => $subtitle, 'image' => $image, 'halfHeight' => (isset($halfHeight) && $halfHeight?$halfHeight:null)])
     <div id="app">
         <main class="main">
             <div class="main__body main__body--raised position-ref">

@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
                 'name' => $faker->name,
                 'role' => $faker->jobTitle,
                 'bio' => $faker->text(280),
-                'avatar' => 'https://loremflickr.com/320/240/people?lock=' . $i
+                'avatar' => 'https://loremflickr.com/1920/1080/people?lock=' . $i
             ]);
         }
 
@@ -32,7 +32,7 @@ class DatabaseSeeder extends Seeder
                 'url' => $faker->url,
                 'socialUrl' => $faker->url,
                 'socialHandle' => '@' . $faker->userName,
-                'avatar' => 'https://loremflickr.com/320/240/logo?lock=' . $i
+                'avatar' => 'https://loremflickr.com/1920/1080/logo?lock=' . $i
             ]);
         }
 
@@ -42,7 +42,7 @@ class DatabaseSeeder extends Seeder
                 'socialUrl' => $faker->url,
                 'socialHandle' => '@' . $faker->userName,
                 'body' => $faker->text(280),
-                'avatar' => 'https://loremflickr.com/320/240/people?lock=' . ($i + $limit)
+                'avatar' => 'https://loremflickr.com/1920/1080/people?lock=' . ($i + $limit)
             ]);
         }
 
@@ -52,7 +52,7 @@ class DatabaseSeeder extends Seeder
                 'title' => $faker->sentence,
                 'author' => $faker->name,
                 'body' => implode(' ', $faker->paragraphs),
-                'cover' => 'https://loremflickr.com/320/240/landscape?lock=' . $i
+                'cover' => 'https://loremflickr.com/1920/1080/landscape?lock=' . $i
             ]);
         }
     }
