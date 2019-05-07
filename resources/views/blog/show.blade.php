@@ -5,6 +5,7 @@
 @include('components.text', [
         'texts' => [
             [
+                'unescape' => true,
                 'description' => $body
             ]
         ]
