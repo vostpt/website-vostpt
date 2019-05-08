@@ -8,7 +8,11 @@
 
         @isset($text['description'])
         <p>
-            {!! $text['description'] !!}
+            @if (isset($text['unescape']) && $text['unescape'])
+                {!! $text['description'] !!}
+            @else
+                {{ $text['description'] }}
+            @endif
         </p>
         @endisset
     @endforeach

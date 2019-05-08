@@ -1,0 +1,14 @@
+.carouselComp {
+    &__indicator{
+        @at-root li#{&} {
+            background-color: #7b7575;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}

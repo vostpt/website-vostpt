@@ -1,4 +1,4 @@
-<div class="section {{!isset($paralaxImage)?:'parallax'}}"
+<div class="section {{!isset($paralaxImage)?:'parallax'}} {{empty($hideOnSmallerThan)?:'d-none d-'.$hideOnSmallerThan.'-block'}}"
 style="{{!isset($paralaxImage)?:"background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('".$paralaxImage."');"}}"
 >
     <div class="container">
