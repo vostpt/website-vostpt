@@ -10,9 +10,12 @@
         ]
     ])
 
-    @include('components.imageCard', [
+    @include('components.carouselImageCard', [
+        'hideOnSmallerThan' => 'xl',
         'sectionTitle' => __('strings.somos_titulo3'),
-        'columnMax' => 4,
+        'columnMax' => 3,
+        'autoplay' => true,
+        'fixedHeight' => '470px',
         'cards' => $arrayMembers
     ])
 
