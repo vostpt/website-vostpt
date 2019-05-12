@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    @include('components.imageCard', [
+    @include('components.imageCards', [
         'columnMax' => 3,
         'cards' => $arrayCoverages
     ])

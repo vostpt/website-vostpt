@@ -17,17 +17,9 @@
                     <div class="carouselComp__item">
                         @foreach ($chunk as $card)
                         <div class="col-md-{{$rows}} mb-7">
-                            <div class="imageCard">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <p>
-                                        <h3 class="card-title">{{$card['title']}}</h3>
-                                            <img class="imageCard__image img-fluid" alt="" src="{{$card['image']}}"></p>
-                                        <h4 class="card-title">{{$card['subtitle']}}</h4>
-                                        <p class="card-text">{{$card['body']}}</p>
-                                    </div>
-                                </div>
-                            </div>
+                            @include('partials.imageCard', [
+                                "card" => $card
+                            ])
                         </div>
                         @endforeach
                     </div>
