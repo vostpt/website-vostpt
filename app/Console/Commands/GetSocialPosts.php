@@ -49,9 +49,7 @@ class GetSocialPosts extends Command
             $socialPost = SocialPost::firstOrNew(['socialId' => $item->children($namespaces['dc'])->creator->__toString().'_'.$item->title->__toString()]);
             $socialPost->socialId = $item->children($namespaces['dc'])->creator->__toString().'_'.$item->title->__toString();
             $socialPost->text = $item->description->__toString();
-
             $socialPost->pubDate =  Carbon::parse($item->pubDate->__toString());
-
             $socialPost->platform = $item->children($namespaces['dc'])->creator->__toString();
             $socialPost->socialUrl = $item->link->__toString();
             $socialPost->save();
