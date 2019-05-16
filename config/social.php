@@ -7,4 +7,5 @@ return [
     'reddit' => 'https://reddit.com/u/vostpt',
     'discord' => 'https://discord.gg/ScvE5tR',
     'websiteTeam' => 'https://github.com/vostpt/website-vostpt/graphs/contributors',
+    'rss' => env('RSS')
 ];
