@@ -52,6 +52,14 @@ class GetSocialPosts extends Command
             $socialPost->pubDate =  Carbon::parse($item->pubDate->__toString());
             $socialPost->platform = $item->children($namespaces['dc'])->creator->__toString();
             $socialPost->socialUrl = $item->link->__toString();
+
+            if($item->children($namespaces['dc'])->creator->__toString() == 'instagram' && $item->enclosure['url']) {
+                $enclosureJson = json_decode(urldecode($item->enclosure['url']));
+                $socialPost->media = $enclosureJson->{$enclosureJson->type};
+            }else{
+                $socialPost->media = $item->enclosure['url'];
+            }
+
             $socialPost->save();
         }
 
