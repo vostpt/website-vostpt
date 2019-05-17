@@ -46,6 +46,11 @@ class GetSocialPosts extends Command
         $xml = simplexml_load_string($response->getBody());
         $namespaces = $xml->getNamespaces(true);
         foreach ($xml->channel->item as $item) {
+            //skip tweet replies
+            if($item->description->__toString()[0] == '@') {
+                continue;
+            }
+
             $socialPost = SocialPost::firstOrNew(['socialId' => $item->children($namespaces['dc'])->creator->__toString().'_'.$item->title->__toString()]);
             $socialPost->socialId = $item->children($namespaces['dc'])->creator->__toString().'_'.$item->title->__toString();
             $socialPost->text = $item->description->__toString();
@@ -53,6 +58,7 @@ class GetSocialPosts extends Command
             $socialPost->platform = $item->children($namespaces['dc'])->creator->__toString();
             $socialPost->socialUrl = $item->link->__toString();
 
+            //extract instagram media
             if($item->children($namespaces['dc'])->creator->__toString() == 'instagram' && $item->enclosure['url']) {
                 $enclosureJson = json_decode(urldecode($item->enclosure['url']));
                 $socialPost->media = $enclosureJson->{$enclosureJson->type};
