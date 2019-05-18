@@ -59,8 +59,8 @@
             <ul class="footer-menu float-left">
                 <li><a href="{{ url('/') }}">Home</a> </li>
                 <li><a href="{{ route('media') }}">@lang('buttons.media')</a> </li>
-                <li><a href="{{ route('blog') }}">@lang('buttons.blog')</a> </li>
                 <li><a href="{{ route('contact') }}">@lang('buttons.contact')</a> </li>
+                <li><a href="{{ route('privacy_policy') }}">@lang('buttons.privacy_policy')</a> </li>
             </ul>
             <div class="copyright float-right"> VOST | Developed by <a href="{{config('social.websiteTeam')}}" target="_blank" rel="nofollow">VOST TEAM</a> </div>
         </div>
