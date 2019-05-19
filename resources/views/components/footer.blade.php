@@ -15,7 +15,7 @@
                         <h5>Social Media Feed</h5>
                         <div class="textwidget">
                             <ul class="fetched_tweets light">
-                                @foreach ($twitterArray as $tweet)
+                                @foreach ($twitterPosts as $tweet)
                                 <li class="tweets_avatar">
                                     <div class="tweet_wrap">
                                         <div class="ltr">
@@ -38,7 +38,7 @@
                     <div class="widget widget_media_gallery">
                         <h5>Instagram Feed</h5>
                         <div class="gallery galleryid-25 gallery-columns-4 gallery-size-thumbnail">
-                            @foreach ($instagramArray as $instagram)
+                            @foreach ($instagramPosts as $instagram)
                             <dl class="gallery-item">
                                 <dt class="gallery-icon {{isset($instagram['portrait']) && $instagram['portrait']?'portrait':'landscape'}}">
                                     <img width="150" height="150" data-opt-src="{{$instagram['srcLarge']}}" src="{{$instagram['srcSmall']}}" class="attachment-thumbnail size-thumbnail hoverZoomLink" alt="" data-opt-loaded="true" data-opt-lazy-loaded="true" data-opt-otimized-width="75" data-opt-optimized-height="75" />
