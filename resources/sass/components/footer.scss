@@ -110,18 +110,17 @@
                 line-height: 21px;
                 padding-left: 23px;
                 &:before {
-                    content: "\f099";
                     display: inline-block;
-                    font: normal normal normal 14px/1 FontAwesome;
                     text-rendering: auto;
                     color: $white;
-                    font-size: 16px;
                     position: absolute;
                     left: 0;
                     top: 2px;
-                }
-                &.facebook:before {
-                    content: "\f09a";
+                    font-style: normal;
+                    font-variant: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 1;
                 }
             }
         }
