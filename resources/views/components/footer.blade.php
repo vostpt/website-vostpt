@@ -21,7 +21,9 @@
                                         <div class="ltr">
                                             <div class="clear"></div>
                                         </div>
-                                        <div class="tweet_data {{$tweet['source']=='facebook'?'facebook':''}}">{{$tweet['data']}}</div>
+                                        <div class="tweet_data fab fa-{{$tweet['source']=='facebook'?'facebook-f':'twitter'}}">
+                                            {{$tweet['data']}}
+                                        </div>
                                         <br />
                                         <div class="clear"></div>
                                         <div class="times"> <em> <a href="{{$tweet['url']}}" target="_blank" title="" >{{$tweet['time']}}</a> </em> </div>
