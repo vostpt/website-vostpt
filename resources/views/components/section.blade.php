@@ -9,8 +9,13 @@ style="{{!isset($paralaxImage)?:"background-image: linear-gradient(rgba(0, 0, 0,
         @isset ($sectionSubtitle)
             <p class="section__subtitle">{!! $sectionSubtitle !!}</p>
         @endisset
-        <div class="row">
-            @yield('sectionContent')
-        </div>
+
+        @isset ($partials)
+            @foreach ($partials as $partial)
+            <div class="row">
+                @include($partial['name'], $partial['variables'])
+            </div>
+            @endforeach
+        @endisset
     </div>
 </div>

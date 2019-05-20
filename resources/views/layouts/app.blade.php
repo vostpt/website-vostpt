@@ -21,13 +21,13 @@
     <link rel="shortcut icon" href="{{ asset('storage/favicon-32x32.png') }}">
 </head>
 <body>
-    @include('components.navbar')
-    @include('components.hero', ['title' =>  $title, 'subtitle' => $subtitle, 'image' => $image, 'halfHeight' => (isset($halfHeight) && $halfHeight?$halfHeight:null)])
+    @include('partials.navbar')
+    @include('partials.hero', ['title' =>  $title, 'subtitle' => $subtitle, 'image' => $image, 'halfHeight' => (isset($halfHeight) && $halfHeight?$halfHeight:null)])
     <div id="app">
         <main class="main">
             <div class="main__body main__body--raised position-ref">
                 @yield('content')
-                @include('components.footer')
+                @include('partials.footer')
             </div>
         </main>
     </div>
