@@ -1,8 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-@include('components.cardDeck', [
-    'columnMax' => 3,
-    'cards' => $posts
+@include('components.section', [
+    'partials' => [
+        [
+            'name' => 'partials.cardDeck',
+            'variables' => [
+                'columnMax' => 3,
+                'cards' => $posts
+            ]
+        ]
+    ]
 ])
 @endsection

@@ -1,7 +1,3 @@
-@extends('components.section')
-
-@section('sectionContent')
-
 @for ($i = 0; $i < ceil(count($cards)/$columnMax); $i++)
     <div class="card-deck cardDeck">
         @for ($j = $i; $j < ($i + $columnMax); $j++)
@@ -21,5 +17,3 @@
         @endfor
     </div>
 @endfor
-
-@overwrite
