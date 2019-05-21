@@ -24,8 +24,22 @@
     @include('components.section',[
         'sectionTitle' => __('strings.home_titulo5')
     ])
-    @include('components.section',[
-        'sectionTitle' => __('strings.home_titulo6')
+
+
+    @include('components.section', [
+        'sectionTitle' => __('strings.home_titulo6'),
+        'hideOnSmallerThan' => 'xl',
+        'partials' => [
+            [
+                'name' => 'partials.carouselImageCard',
+                'variables' => [
+                    'columnMax' => 3,
+                    'autoplay' => true,
+                    'fixedHeight' => '470px',
+                    'cards' => $testimonials
+                ]
+            ]
+        ]
     ])
 
     @include('components.section', [
