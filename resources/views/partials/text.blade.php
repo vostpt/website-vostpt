@@ -1,4 +1,5 @@
 @foreach ($texts as $text)
+<div>
     @isset($text['title'])
     <h3>{{$text['title']}}</h3>
     @endisset
@@ -12,4 +13,5 @@
         @endif
     </p>
     @endisset
+</div>
 @endforeach
