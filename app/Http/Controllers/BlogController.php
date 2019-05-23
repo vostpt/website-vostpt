@@ -13,7 +13,7 @@ class BlogController extends Controller
             $item->url = route('blog.show', ['blog' => $item]);
             return $item;
         });
-        return view('blog.index', ['title' =>  __('strings.home_titulo1'), 'subtitle' => __('strings.home_subtitulo1'), 'image' => asset('storage/VOSTSITE_0053.jpg'), 'posts' => $posts]);
+        return view('blog.index', ['title' =>  __('strings.blog_titulo1'), 'subtitle' => __('strings.blog_subtitulo1'), 'image' => asset('storage/VOSTSITE_0053.jpg'), 'posts' => $posts]);
     }
 
     /**

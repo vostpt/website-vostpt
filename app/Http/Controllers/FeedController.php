@@ -16,6 +16,6 @@ class FeedController extends Controller
                 'description' => $item->text
             ];
         });
-        return view('vost_feed', ['title' =>  __('strings.home_titulo1'), 'subtitle' => __('strings.home_subtitulo1'), 'image' => asset('storage/VOSTSITE_0053.jpg'), 'socialPosts' => $socialPosts]);
+        return view('vost_feed', ['title' =>  __('strings.feed_titulo1'), 'subtitle' => __('strings.feed_subtitulo1'), 'image' => asset('storage/VOSTSITE_0053.jpg'), 'socialPosts' => $socialPosts]);
     }
 }
