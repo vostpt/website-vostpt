@@ -28,7 +28,7 @@ class AppServiceProvider extends ServiceProvider
         //
         //footer variables
         //tweets & facebook posts
-        $twitterArray = SocialPost::where('platform',['twitter','facebook'])->limit(3)->get();
+        $twitterArray = SocialPost::whereIn('platform',['twitter','facebook'])->orderBy('pubDate','desc')->limit(3)->get();
         $twitterArray = $twitterArray->map(function ($item) {
             return [
                 'source' => $item->platform,
@@ -39,7 +39,7 @@ class AppServiceProvider extends ServiceProvider
         });
 
         //instagram
-        $instagramArray = SocialPost::where('platform','instagram')->limit(8)->get();
+        $instagramArray = SocialPost::where('platform','instagram')->orderBy('pubDate','desc')->limit(8)->get();
         $instagramArray = $instagramArray->map(function ($item) {
             return [
                 'srcLarge' => $item->media,

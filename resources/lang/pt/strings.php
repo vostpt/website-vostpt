@@ -123,4 +123,20 @@ return [
     <br>
     Data da última atualização da política de privacidade:<br>
     26 de outubro de 2018',
+
+    //Blog
+    'blog_titulo1' => 'Blog',
+    'blog_subtitulo1' => '',
+
+    //Feed
+    'feed_titulo1' => 'Feed',
+    'feed_subtitulo1' => '',
+
+    //Contact
+    'contacto_titulo1' => 'Contacto',
+    'contacto_subtitulo1' => '',
+
+    //Media
+    'media_titulo1' => 'Media',
+    'media_subtitulo1' => '',
 ];

@@ -17,6 +17,6 @@ class MediaController extends Controller
                 'body' => $item->socialUrl
             ];
         });
-        return view('media', ['title' =>  __('strings.home_titulo1'), 'subtitle' => __('strings.home_subtitulo1'), 'image' => asset('storage/VOSTSITE_0053.jpg'), 'arrayCoverages' => $arrayCoverages]);
+        return view('media', ['title' =>  __('strings.media_titulo1'), 'subtitle' => __('strings.media_subtitulo1'), 'image' => asset('storage/VOSTSITE_0053.jpg'), 'arrayCoverages' => $arrayCoverages]);
     }
 }
