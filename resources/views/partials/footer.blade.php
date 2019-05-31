@@ -22,7 +22,9 @@
                                             <div class="clear"></div>
                                         </div>
                                         <div class="tweet_data fab fa-{{$tweet['source']=='facebook'?'facebook-f':'twitter'}}">
-                                            {{$tweet['data']}}
+                                            <span>
+                                                {{$tweet['data']}}
+                                            </span>
                                         </div>
                                         <br />
                                         <div class="clear"></div>
