@@ -44,6 +44,7 @@ class AppServiceProvider extends ServiceProvider
             return [
                 'srcLarge' => $item->media,
                 'srcSmall' => $item->media,
+                'url' => $item->socialUrl,
             ];
         });
 
