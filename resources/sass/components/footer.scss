@@ -1,4 +1,8 @@
 .footer {
+    ul {
+        list-style: none;
+    }
+
     background: $white;
     &.footer-big {
         color: $color_mountain_mist_approx;
@@ -10,7 +14,7 @@
             text-decoration: none;
             word-wrap: break-word;
         }
-        ul {
+        .footer-menu {
             margin-bottom: 0;
             padding: 0;
             list-style: none;
@@ -99,12 +103,11 @@
             background: none;
             border: none;
             box-shadow: none;
-            color: $white;
+            color: $color_mountain_mist_approx;
             padding: 0;
             position: relative;
             line-height: 1;
             .tweet_data {
-                color: $color_mountain_mist_approx;
                 font-weight: 300;
                 font-size: 14px;
                 line-height: 21px;
@@ -123,6 +126,7 @@
                     line-height: 1;
                 }
                 span {
+                    color: $color_mountain_mist_approx;
                     font-family: $font-family-sans-serif;
                     font-size: 14.4px;
                     font-weight: 400;
