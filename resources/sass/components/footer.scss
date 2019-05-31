@@ -78,11 +78,11 @@
         transition: all 0.3s ease;
         color: $color_razzmatazz_approx;
         &:hover {
-            color: $color_violet_eggplant_approx;
+            color:$color_mountain_mist_approx;
             text-decoration: none;
         }
         &:focus {
-            color: $color_violet_eggplant_approx;
+            color: $color_mountain_mist_approx;
             text-decoration: none;
         }
         &:not(.btn) {
