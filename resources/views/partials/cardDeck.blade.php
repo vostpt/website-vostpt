@@ -3,11 +3,14 @@
         @for ($j = $i; $j < ($i + $columnMax); $j++)
             @isset($cards[$j])
                 <div class="card">
-                    <div class="card-img-top rounded">
+                    @isset($cards[$j]->cover)
+                        <div class="card-img-top rounded">
                             <a href="{{$cards[$j]->url}}">
                                 <img src="{{$cards[$j]->cover}}" class="" alt="...">
                             </a>
-                    </div>
+                        </div>
+                    @endisset
+
                     <div class="card-body">
                             <a href="{{$cards[$j]->url}}"><h5 class="card-title">{{$cards[$j]->title}}</h5></a>
                         <p class="card-text">{{Str::limit($cards[$j]->body,200)}}</p>
