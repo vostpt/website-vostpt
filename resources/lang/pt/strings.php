@@ -139,4 +139,7 @@ return [
     //Media
     'media_titulo1' => 'Media',
     'media_subtitulo1' => '',
+
+    //MISC
+    'voltamos_titulo' => 'Voltamos já'
 ];

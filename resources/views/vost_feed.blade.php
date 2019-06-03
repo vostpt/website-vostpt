@@ -2,13 +2,14 @@
 
 @section('content')
 @include('components.section', [
-        'partials' => [
-            [
-                'name' => 'partials.text',
-                'variables' => [
-                    'texts' => $socialPosts
-                ]
+    'partials' => [
+        [
+            'name' => 'partials.cardDeck',
+            'variables' => [
+                'columnMax' => 1,
+                'cards' => $socialPosts
             ]
         ]
-]);
+    ]
+])
 @endsection
