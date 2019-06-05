@@ -1,10 +1,14 @@
 .imageCard{
     &__image{
+        display: inline-block;
         margin-bottom: 0.75rem;
         width: 100px;
         height: 100px;
         border-radius: 50%;
         box-shadow: 0 16px 38px -12px rgba(0,0,0,0.56), 0 4px 25px 0 rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.2);
+        img{
+            height: 10px;
+        }
     }
 
     .card{
