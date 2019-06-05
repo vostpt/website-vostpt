@@ -42,8 +42,8 @@ class AppServiceProvider extends ServiceProvider
         $instagramArray = SocialPost::where('platform','instagram')->orderBy('pubDate','desc')->limit(8)->get();
         $instagramArray = $instagramArray->map(function ($item) {
             return [
-                'srcLarge' => $item->media,
-                'srcSmall' => $item->media,
+                'srcLarge' => asset('storage/'.$item->media),
+                'srcSmall' => asset('storage/'.$item->media),
                 'url' => $item->socialUrl,
             ];
         });
