@@ -20,7 +20,6 @@
     margin-bottom: 30px;
 }
 
-
 //parallax
 .parallax {
     .fa{
@@ -33,4 +32,20 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+}
+
+//image centeri ng
+.img-centering {
+    position: relative;
+    overflow: hidden;
+    img {
+        min-height: 100%;
+        min-width: 100%;
+        position: absolute;
+        top: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        right: -9999px;
+        margin: auto;
+    }
 }
