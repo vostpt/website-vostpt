@@ -4,7 +4,7 @@
             @isset($cards[$j])
                 <div class="card">
                     @isset($cards[$j]->cover)
-                        <div class="card-img-top rounded">
+                        <div class="card-img-top rounded img-centering">
                             <a href="{{$cards[$j]->url}}">
                                 <img src="{{$cards[$j]->cover}}" class="" alt="...">
                             </a>
