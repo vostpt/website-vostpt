@@ -19,3 +19,18 @@
 .marigin-bottom-md {
     margin-bottom: 30px;
 }
+
+
+//parallax
+.parallax {
+    .fa{
+        color: white;
+    }
+    color: white;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
