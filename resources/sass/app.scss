@@ -9,12 +9,11 @@
 @import '~@fortawesome/fontawesome-free/scss/solid';
 @import '~@fortawesome/fontawesome-free/scss/brands';
 
-// Bootstrap
-@import "~bootstrap/scss/bootstrap";
-
 // Variables
 @import "variables";
 
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
 
 // Pages
 @import "pages/welcome";
@@ -32,10 +31,6 @@
 @import "helpers";
 
 // Bootstrap overrides
-body{
-    font-family: $font-family-sans-serif;
-}
-
 .navbar-light {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
