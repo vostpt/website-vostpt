@@ -6,6 +6,7 @@ use Illuminate\Console\Command;
 use GuzzleHttp\Client;
 use App\SocialPost;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Storage;
 
 class GetSocialPosts extends Command
 {
@@ -59,13 +60,23 @@ class GetSocialPosts extends Command
             $socialPost->socialUrl = $item->link->__toString();
 
             //extract instagram media
+            $mediaUrl = null;
             if($item->children($namespaces['dc'])->creator->__toString() == 'instagram' && $item->enclosure['url']) {
                 $enclosureJson = json_decode(urldecode($item->enclosure['url']));
-                $socialPost->media = $enclosureJson->{$enclosureJson->type};
+                $mediaUrl = $enclosureJson->{$enclosureJson->type};
             }else{
-                $socialPost->media = $item->enclosure['url'];
+                $mediaUrl = $item->enclosure['url'];
             }
 
+            //download media
+            if($mediaUrl){
+                $contents = file_get_contents($mediaUrl);
+                $filename = 'img_'.md5($contents);
+                Storage::disk('public')->put($filename, $contents);
+                $socialPost->media = $filename;
+            }else{
+                $socialPost->media = null;
+            }
             $socialPost->save();
         }
 

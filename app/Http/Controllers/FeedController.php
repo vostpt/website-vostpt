@@ -14,7 +14,7 @@ class FeedController extends Controller
             $item->title = $item->platform." - ".Carbon::parse($item->pubDate)->diffForHumans();
             $item->body = $item->text;
             if(!empty($item->media)){
-                $item->cover = $item->media;
+                $item->cover = asset('storage/'.$item->media);
             }
             $item->url = $item->socialUrl;
             return $item;
