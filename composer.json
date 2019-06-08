@@ -16,7 +16,8 @@
         "laravel/tinker": "^1.0",
         "socialiteproviders/facebook": "dev-master",
         "socialiteproviders/instagram": "^3.0",
-        "socialiteproviders/twitter": "^3.0"
+        "socialiteproviders/twitter": "^3.0",
+        "spatie/laravel-medialibrary": "^7.0.0"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

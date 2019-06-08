@@ -13,8 +13,9 @@ class FeedController extends Controller
         $socialPosts = $socialPosts->map(function ($item) {
             $item->title = $item->platform." - ".Carbon::parse($item->pubDate)->diffForHumans();
             $item->body = $item->text;
-            if(!empty($item->media)){
-                $item->cover = asset('storage/'.$item->media);
+            if(!empty($item->getFirstMedia())){
+                $item->cover = $item->getFirstMedia();
+                $item->coverType = 'html';
             }
             $item->url = $item->socialUrl;
             return $item;

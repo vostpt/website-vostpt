@@ -6,7 +6,12 @@
                     @isset($cards[$j]->cover)
                         <div class="card-img-top rounded img-centering">
                             <a href="{{$cards[$j]->url}}">
-                                <img src="{{$cards[$j]->cover}}" class="" alt="...">
+                                @if($cards[$j]->coverType == 'html')
+                                    {{$cards[$j]->cover}}
+                                @else
+                                    <img src="{{$cards[$j]->cover}}" class="" alt="...">
+                                @endif
+
                             </a>
                         </div>
                     @endisset

@@ -20,7 +20,6 @@ class CreateSocialPostsTable extends Migration
             $table->timestamp('pubDate');
             $table->string('platform');
             $table->string('socialUrl');
-            $table->text('media')->nullable();
             $table->timestamps();
         });
     }

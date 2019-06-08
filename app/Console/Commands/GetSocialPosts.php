@@ -70,12 +70,10 @@ class GetSocialPosts extends Command
 
             //download media
             if($mediaUrl){
-                $contents = file_get_contents($mediaUrl);
-                $filename = 'img_'.md5($contents);
-                Storage::disk('public')->put($filename, $contents);
-                $socialPost->media = $filename;
-            }else{
-                $socialPost->media = null;
+                $socialPost
+                    ->addMediaFromUrl($mediaUrl)
+                    ->withResponsiveImages()
+                    ->toMediaCollection();
             }
             $socialPost->save();
         }
