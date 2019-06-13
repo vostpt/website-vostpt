@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 use App\SocialPost;
@@ -25,6 +26,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        //blade components
+        Blade::component('components.sectionRow', 'sectionRow');
+
         //
         //footer variables
         //tweets & facebook posts
