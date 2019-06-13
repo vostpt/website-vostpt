@@ -1,15 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-    @include('components.section', [
+
+    @sectionRow([
         'sectionSubtitle' => __('strings.politica_subtitulo2')
     ])
+    @endsectionRow
 
-    @include('components.section', [
-        'partials' => [
-            [
-                'name' => 'partials.text',
-                'variables' => [
+    @sectionRow
+        @include('partials.text', [
                     'texts' => [
                         [
                             'unescape' => true,
@@ -52,8 +51,7 @@
                             'description' => __('strings.politica_text8')
                         ]
                     ]
-                ]
-            ]
-        ]
-    ])
+                ])
+    @endsectionRow
+
 @endsection

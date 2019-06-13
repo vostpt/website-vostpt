@@ -1,15 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    @include('components.section', [
-        'partials' => [
-            [
-                'name' => 'partials.imageCards',
-                'variables' => [
-                    'columnMax' => 3,
-                    'cards' => $arrayCoverages
-                ]
-            ]
-        ]
-    ])
+    @sectionRow
+        @include('partials.imageCards', [
+            'columnMax' => 3,
+            'cards' => $arrayCoverages
+        ])
+    @endsectionRow
 @endsection
