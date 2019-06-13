@@ -1,0 +1,34 @@
+.contactForm {
+    margin-top: 50px;
+    background-color: white;
+    color: black;
+    min-width: 400px;
+    form{
+        border-radius: .3rem;
+        padding: 70px 40px;
+    }
+
+    &__title {
+        background-color: #d80917;
+        color: #f8f8f8;
+        padding: 15px 25px;
+        font-size: 1.2rem;
+        margin-top: -50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: .3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    input {
+        border: none;
+        border-bottom: 1px solid #CCC;
+    }
+
+    textarea {
+        border: none;
+    }
+}
