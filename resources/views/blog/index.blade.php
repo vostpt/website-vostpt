@@ -1,15 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-@include('components.section', [
-    'partials' => [
-        [
-            'name' => 'partials.cardDeck',
-            'variables' => [
+
+@sectionRow
+    @include('partials.cardDeck',[
                 'columnMax' => 3,
                 'cards' => $posts
-            ]
-        ]
-    ]
-])
+            ])
+@endsectionRow
+
 @endsection
