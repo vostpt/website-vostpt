@@ -1,4 +1,4 @@
-<div class="contactForm">
+<div class="contactForm float-right">
     <div class="contactForm__title">
         Entre em contacto
     </div>
@@ -20,10 +20,14 @@
             <textarea class="form-control" rows="8" placeholder="A sua mensagem"></textarea>
         </div>
 
-        <div>
-            CAPTCHA
+
+        <div class="text-center">
+            <div>
+                CAPTCHA
+            </div>
+            <button type="submit" class="btn btn-danger">ENVIAR MENSAGEM</button>
         </div>
 
-        <button type="submit" class="btn btn-danger">ENVIAR MENSAGEM</button>
     </form>
 </div>
+
