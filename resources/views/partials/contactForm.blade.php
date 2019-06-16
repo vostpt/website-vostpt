@@ -22,10 +22,9 @@
 
 
         <div class="text-center">
-            <div>
-                CAPTCHA
-            </div>
-            <button type="submit" class="btn btn-danger">ENVIAR MENSAGEM</button>
+            {!! NoCaptcha::renderJs() !!}
+            {!! NoCaptcha::display() !!}
+            <button id="my-form-id-submit" type="submit" class="btn btn-danger">ENVIAR MENSAGEM</button>
         </div>
 
     </form>
