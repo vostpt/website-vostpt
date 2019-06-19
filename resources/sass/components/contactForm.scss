@@ -4,6 +4,12 @@
     color: black;
     min-width: 400px;
     display: inline-block;
+    .sent-message {
+        display: none;
+        text-align: center;
+        margin: 110px 0;
+        color: gray;
+    }
     form{
         border-radius: .3rem;
         padding: 70px 40px;
