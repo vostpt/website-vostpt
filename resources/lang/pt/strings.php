@@ -136,6 +136,13 @@ return [
     'contacto_titulo1' => 'Contacto',
     'contacto_subtitulo1' => '',
 
+    'contacto_form_titulo' => 'Entre em contacto',
+    'contacto_form_nome' => 'O seu nome',
+    'contacto_form_email' => 'O seu email',
+    'contacto_form_assunto' => 'O seu assunto',
+    'contacto_form_mensagem' => 'A sua mensagem',
+    'contacto_form_button' => 'ENVIAR MENSAGEM',
+
     //Media
     'media_titulo1' => 'Media',
     'media_subtitulo1' => '',
