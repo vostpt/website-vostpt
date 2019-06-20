@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use App\Message;
 
 class ContactController extends Controller
 {
@@ -19,9 +20,14 @@ class ContactController extends Controller
             'g-recaptcha-response' => 'required|captcha'
         ]);
 
-        $data = $request->all();
-        $check = true;
-        //$check = Messages::insert($data);
+        $message = new Message();
+        $message->name = $request->name;
+        $message->email = $request->email;
+        $message->subject = $request->subject;
+        $message->message = $request->message;
+
+        $check = $message->save();
+
         $arr = array('msg' => 'Something went wrong. Please try again later', 'status' => false);
         if($check){
         $arr = array('msg' => 'Successfully submitted form using ajax', 'status' => true);
