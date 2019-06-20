@@ -1,6 +1,8 @@
-<div class="contactForm float-right">
-    <div class="contactForm__title">
-        @lang('strings.contacto_form_titulo')
+<div class="contactForm">
+    <div class="contactForm__title__wrapper">
+        <div class="contactForm__title__content">
+            @lang('strings.contacto_form_titulo')
+        </div>
     </div>
 
     <div class="sent-message">
@@ -25,9 +27,11 @@
         <div class="form-group">
             <textarea type="text" name="message" class="form-control" rows="8" placeholder="@lang('strings.contacto_form_mensagem')"></textarea>
         </div>
-        <div class="form-group">
-            {!! NoCaptcha::renderJs() !!}
-            {!! NoCaptcha::display() !!}
+        <div class="text-center">
+            <div class="form-group captcha-block">
+                {!! NoCaptcha::renderJs() !!}
+                {!! NoCaptcha::display() !!}
+            </div>
         </div>
 
         <div class="text-center">
