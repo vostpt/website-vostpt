@@ -136,6 +136,23 @@ return [
     'contacto_titulo1' => 'Contacto',
     'contacto_subtitulo1' => '',
 
+    'contacto_titulo2' => 'Como nos contactar',
+    'contacto_titulo3' => 'Queres juntar-te a nós?',
+    'contacto_text1' => '
+                <p>
+                    Na VOST Portugal estamos sempre à procura de pessoas que se queiram juntar à nossa equipa. Se sentes que podes ajudar de alguma maneira, seja com conteúdos, gestão de redes sociais, validação de informação, meteorologia, ou outros, e se o teu espírito é igual ao nosso seria um prazer ter-te connosco.
+                    <br><a href="https://forms.gle/FrbDeRNw7LEsv5SK7" target="_blank" rel="noopener"><strong>Preenche este formulário</strong></a>
+                </p>
+                <p>Se és developer, e queres ajudar, <a href="https://github.com/vostpt" target="_blank" rel="noopener"><strong>vai até ao nosso GitHub</strong></a></p>
+                <p>Para qualquer outro tipo de contactos preenche por favor o formulário de contacto.</p>',
+
+    'contacto_form_titulo' => 'Entre em contacto',
+    'contacto_form_nome' => 'O seu nome',
+    'contacto_form_email' => 'O seu email',
+    'contacto_form_assunto' => 'O seu assunto',
+    'contacto_form_mensagem' => 'A sua mensagem',
+    'contacto_form_button' => 'ENVIAR MENSAGEM',
+
     //Media
     'media_titulo1' => 'Media',
     'media_subtitulo1' => '',

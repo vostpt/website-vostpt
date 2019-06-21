@@ -1,0 +1,48 @@
+.contactForm {
+    margin-top: 30px;
+    background-color: white;
+    color: black;
+    border-radius: .3rem;
+    .sent-message {
+        display: none;
+        text-align: center;
+        margin: 110px 0;
+        color: gray;
+    }
+    form{
+        padding: 70px 40px;
+    }
+
+    &__title {
+        &__wrapper {
+            display: inline-block;
+            width: 100%;
+            margin-top: -30px;
+            text-align: center;
+        }
+
+        &__content {
+            background-color: #d80917;
+            color: #f8f8f8;
+            padding: 15px 0px;
+            font-size: 1.2rem;
+            border-radius: .3rem;
+            text-align: center;
+            width: 90%;
+            display: inline-block;
+        }
+    }
+
+    input {
+        border: none;
+        border-bottom: 1px solid #CCC;
+    }
+
+    textarea {
+        border: none;
+    }
+
+    .captcha-block {
+        display: inline-block;
+    }
+}

@@ -1,19 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
-@include('components.section', [
-    'partials' => [
-        [
-            'name' => 'partials.text',
-            'variables' => [
+
+@sectionRow
+    @include('partials.text',[
                 'texts' => [
                     [
                         'unescape' => true,
                         'description' => $body
                     ]
                 ]
-            ]
-        ]
-    ]
-])
+            ])
+@endsectionRow
+
 @endsection

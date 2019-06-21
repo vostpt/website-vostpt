@@ -69,7 +69,7 @@ class GetSocialPosts extends Command
             }
 
             //download media
-            if($mediaUrl){
+            if($mediaUrl && !$socialPost->getFirstMedia()){
                 $socialPost
                     ->addMediaFromUrl($mediaUrl)
                     ->withResponsiveImages()

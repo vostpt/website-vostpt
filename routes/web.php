@@ -19,5 +19,6 @@ Route::get('blog', 'BlogController@index')->name('blog');
 Route::get('/blog/{id}', 'BlogController@show')->name('blog.show');
 Route::get('feed', 'FeedController@index')->name('vost_feed');
 Route::get('contacto', 'ContactController@index')->name('contact');
+Route::post('save-form', 'ContactController@store')->name('saveForm');
 Route::get('media', 'MediaController@index')->name('media');
 Route::get('privacidade', 'PrivacyController@index')->name('privacy_policy');
