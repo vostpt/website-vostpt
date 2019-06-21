@@ -8,12 +8,13 @@ use App\Post;
 class BlogController extends Controller
 {
     public function index() {
-        $posts = Post::all();
+        $posts = Post::paginate(12);
+        $links = $posts->links();
         $posts = $posts->map(function ($item) {
             $item->url = route('blog.show', ['blog' => $item]);
             return $item;
         });
-        return view('blog.index', ['title' =>  __('strings.blog_titulo1'), 'subtitle' => __('strings.blog_subtitulo1'), 'image' => asset('storage/VOSTSITE_0053.jpg'), 'posts' => $posts]);
+        return view('blog.index', ['title' =>  __('strings.blog_titulo1'), 'subtitle' => __('strings.blog_subtitulo1'), 'image' => asset('storage/VOSTSITE_0053.jpg'), 'posts' => $posts, 'links' => $links, 'halfHeight' => true]);
     }
 
     /**
