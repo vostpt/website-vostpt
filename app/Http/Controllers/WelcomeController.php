@@ -9,7 +9,8 @@ use App\Testimonial;
 class WelcomeController extends Controller
 {
     public function index() {
-        $posts = Post::take(3)->get();
+
+        $posts = Post::orderBy('featured', 'desc')->orderBy('created_at', 'desc')->take(3)->get();
         $posts = $posts->map(function ($item) {
             $item->url = route('blog.show', ['blog' => $item]);
             return $item;

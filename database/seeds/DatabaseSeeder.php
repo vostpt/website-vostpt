@@ -52,7 +52,8 @@ class DatabaseSeeder extends Seeder
                 'title' => $faker->sentence,
                 'author' => $faker->name,
                 'body' => implode(' ', $faker->paragraphs),
-                'cover' => 'https://loremflickr.com/1920/1080/landscape?lock=' . $i
+                'cover' => 'https://loremflickr.com/1920/1080/landscape?lock=' . $i,
+                'created_at' => $faker->dateTime
             ]);
         }
     }

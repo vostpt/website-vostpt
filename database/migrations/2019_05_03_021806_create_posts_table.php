@@ -21,6 +21,7 @@ class CreatePostsTable extends Migration
             $table->string('author');
             $table->text('body');
             $table->string('cover');
+            $table->boolean('featured')->nullable();
         });
     }
 
