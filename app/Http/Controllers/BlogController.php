@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+use Jenssegers\Date\Date;
 
 class BlogController extends Controller
 {
@@ -26,6 +27,8 @@ class BlogController extends Controller
     public function show($id)
     {
         $post = Post::find($id);
-        return view('blog.show', ['title' =>  $post->title, 'subtitle' => $post->author, 'image' => $post->cover, 'body' => $post->body, 'halfHeight' => true]);
+
+        $date = ucwords(Date::parse($post->created_at)->format('F j, Y'));
+        return view('blog.show', ['title' =>  $post->title, 'subtitle' => $post->author.' @ '.$date, 'image' => $post->cover, 'body' => $post->body, 'halfHeight' => true]);
     }
 }
