@@ -11,7 +11,7 @@ style="{{!isset($paralaxImage)?:"background-image: linear-gradient(rgba(0, 0, 0,
         @endisset
 
         @if (!empty(isset($slot) ? trim($slot) : false))
-            <div class="row">
+            <div class="row d-flex justify-content-center">
                 {{ $slot }}
             </div>
         @endif
