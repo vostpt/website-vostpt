@@ -1,13 +1,13 @@
 .contactForm {
     margin-top: 30px;
-    background-color: white;
-    color: black;
+    background-color: $white;
+    color: $black;
     border-radius: .3rem;
     .sent-message {
         display: none;
         text-align: center;
         margin: 110px 0;
-        color: gray;
+        color: $color_mountain_mist_approx;
     }
     form{
         padding: 70px 40px;
@@ -22,8 +22,8 @@
         }
 
         &__content {
-            background-color: #d80917;
-            color: #f8f8f8;
+            background-color: $red;
+            color: $white;
             padding: 15px 0px;
             font-size: 1.2rem;
             border-radius: .3rem;
@@ -35,7 +35,7 @@
 
     input {
         border: none;
-        border-bottom: 1px solid #CCC;
+        border-bottom: 1px solid $color_mountain_mist_approx;
     }
 
     textarea {

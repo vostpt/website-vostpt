@@ -9,5 +9,6 @@
             </div>
         </main>
     </div>
+    @stack('script-body')
 </body>
 </html>

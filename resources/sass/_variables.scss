@@ -1,12 +1,3 @@
-
-// Body
-$body-bg: #fff;
-
-// Typography
-$font-family-sans-serif: "Lato", sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
-
 // Colors
 $blue: #3490dc;
 $indigo: #6574cd;
@@ -18,14 +9,36 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+$white: #fff;
+$black: #000;
+// Body
+$body-bg: $white;
+
+// Typography
+$font-family-sans-serif: "Lato", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
 
 $color_violet_eggplant_approx: #9c27b0;
 $color_oxford_blue_approx: #3c4858;
 $color_mountain_mist_approx: #999;
-$white: #fff;
+
 $color_tuatara_approx: #323437;
 $white_20: rgba(white, 0.2);
 $black_56: rgba(black, 0.56);
 $black_12: rgba(black, 0.12);
 $black_20: rgba(black, 0.2);
+$black_shadow: rgba(black, 0.04);
 $color_razzmatazz_approx: #e91e63;
+
+//Mapping Bootstrap colors
+$theme-colors: (
+  "primary": $blue,
+  "secondary": $color_oxford_blue_approx,
+  "success": $green,
+  "danger": $red,
+  "warning": $orange,
+  "info": $cyan,
+  "light": $white,
+  "dark": $color_tuatara_approx
+);

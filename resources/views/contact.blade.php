@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+     @sectionRow(['paralaxImage' => asset('storage/VOSTSITE_0060.jpg')])
+        @include('partials.subscribeForm')
+    @endsectionRow
+
 
     @sectionRow(['paralaxImage' => asset('storage/VOSTSITE_0060.jpg')])
         <div class="col-lg-7">

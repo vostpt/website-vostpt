@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use App\Message;
+use App\Subscription;
 
 class ContactController extends Controller
 {
@@ -27,6 +28,23 @@ class ContactController extends Controller
         $message->message = $request->message;
 
         $check = $message->save();
+
+        $arr = array('msg' => 'Something went wrong. Please try again later', 'status' => false);
+        if($check){
+        $arr = array('msg' => 'Successfully submitted form using ajax', 'status' => true);
+        }
+        return Response()->json($arr);
+    }
+
+    public function storeSubs(Request $request) {
+        request()->validate([
+            'email' => 'required|email',
+        ]);
+
+        $subscription = new Subscription();
+        $subscription->email = $request->email;
+
+        $check = $subscription->save();
 
         $arr = array('msg' => 'Something went wrong. Please try again later', 'status' => false);
         if($check){

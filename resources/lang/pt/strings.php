@@ -153,6 +153,11 @@ return [
     'contacto_form_mensagem' => 'A sua mensagem',
     'contacto_form_button' => 'ENVIAR MENSAGEM',
 
+    'subscribe_form_titulo' => 'Newsletter',
+    'subscribe_form_label' => 'Mantêm te atualizado, subscreve a nossa mailing list!',
+    'subscribe_form_email' => 'O seu email',
+    'subscribe_form_button' => 'SUBSCREVE',
+
     //Media
     'media_titulo1' => 'Media',
     'media_subtitulo1' => '',

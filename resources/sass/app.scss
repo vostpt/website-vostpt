@@ -33,21 +33,18 @@
 
 // Bootstrap overrides
 .navbar-light {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    background-color: $white;
+    box-shadow: 0 2px 4px $black_shadow;
     transition: all 150ms ease;
 }
 
 .navbar-dark {
     transition: all 150ms ease;
     .navbar-nav .nav-link {
-        color: white;
+        color: $white;
     }
 
     .collapsing .navbar-nav .nav-link {
         color: transparent;
     }
 }
-
-
-

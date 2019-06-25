@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark navbar-laravel fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="{{ url('/') }}">
+        <a class="navbar-brand" href="{{ route('home') }}">
             {{ config('app.name', 'Laravel') }}
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -26,15 +26,32 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('blog') }}">@lang('buttons.blog')</a>
                 </li>
+
                 <li class="nav-item dropdown">
-                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                    <a id="navbarDropdownMenu" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             @lang('buttons.more')<span class="caret"></span>
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenu">
                         <a class="dropdown-item" href="{{ route('vost_feed') }}">@lang('buttons.vost_feed')</a>
                         <a class="dropdown-item" href="{{ route('contact') }}">@lang('buttons.contact')</a>
                         <a class="dropdown-item" href="{{ route('media') }}">@lang('buttons.media')</a>
                         <a class="dropdown-item" href="{{ route('privacy_policy') }}">@lang('buttons.privacy_policy')</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a id="navbarDropdownLocale" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <img src="{{asset('storage/flag_icons/gif/'.app()->getLocale().'.gif')}}" />
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownLocale">
+                        @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                            @if ($localeCode !== app()->getLocale())
+                            <a class="dropdown-item" rel="alternate" hreflang="{{$localeCode}}" href="{{LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                                <img src="{{asset("storage/flag_icons/gif/$localeCode.gif")}}" /> {{{ ucfirst($properties['native']) }}}
+                            </a>
+                            @endif
+                        @endforeach
                     </div>
                 </li>
             </ul>

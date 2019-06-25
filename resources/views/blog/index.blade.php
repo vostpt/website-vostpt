@@ -7,6 +7,10 @@
                 'columnMax' => 3,
                 'cards' => $posts
             ])
+    <div class="flex-center w-100">
+        {{$links}}
+    </div>
+
 @endsectionRow
 
 @endsection
