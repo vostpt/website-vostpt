@@ -38,7 +38,7 @@ class ContactController extends Controller
 
     public function storeSubs(Request $request) {
         request()->validate([
-            'email' => 'required|email',
+            'email' => 'required|email|unique:subscriptions,email',
         ]);
 
         $subscription = new Subscription();
