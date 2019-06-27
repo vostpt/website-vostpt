@@ -32,7 +32,13 @@ jQuery.validator.setDefaults({
 window.ajaxComplete = function (form, endpoint) {
     let formData = new FormData(form[0]);
 
-    axios
+    const instance = axios.create();
+    instance.interceptors.request.use(function (config) {
+        form.find('button').attr('disabled', true);
+        return config;
+    });
+
+    instance
     .post(endpoint, formData, { headers: { 'Content-Type': 'multipart/form-data' } })
     .then(function(response) {
         form.hide();
@@ -40,9 +46,14 @@ window.ajaxComplete = function (form, endpoint) {
     })
     .catch(function (error) {
         // handle error
-        form.validate().showErrors(error.response.data.errors)
+        if(error.response.data.errors){
+            form.validate().showErrors(error.response.data.errors)
+        }else{
+            console.log(error);
+        }
     })
     .finally(function () {
+        form.find('button').removeAttr("disabled");
         // always executed
     });
 }
