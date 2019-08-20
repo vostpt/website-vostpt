@@ -29,7 +29,8 @@ class AppServiceProvider extends ServiceProvider
         //blade components
         Blade::component('components.sectionRow', 'sectionRow');
 
-        //
+        // TODO this below need to be moved to somewhere else as it is blocking initialisation on project
+        /*
         //footer variables
         //tweets & facebook posts
         $twitterArray = SocialPost::whereIn('platform',['twitter','facebook'])->orderBy('pubDate','desc')->limit(3)->get();
@@ -53,5 +54,7 @@ class AppServiceProvider extends ServiceProvider
         });
 
         View::share(['instagramArray' => $instagramArray, 'twitterArray' => $twitterArray]);
+        */
+        View::share(['instagramArray' => [], 'twitterArray' => []]);
     }
 }
