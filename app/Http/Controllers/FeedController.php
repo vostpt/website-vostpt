@@ -20,6 +20,6 @@ class FeedController extends Controller
             $item->url = $item->socialUrl;
             return $item;
         });
-        return view('vost_feed', ['title' =>  __('strings.feed_titulo1'), 'subtitle' => __('strings.feed_subtitulo1'), 'image' => asset('storage/images/VOSTSITE_0053.jpg'), 'socialPosts' => $socialPosts]);
+        return view('vost_feed', ['title' =>  __('strings.feed_titulo1'), 'subtitle' => __('strings.feed_subtitulo1'), 'image' => getRandomHero(), 'socialPosts' => $socialPosts]);
     }
 }

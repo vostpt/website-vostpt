@@ -15,7 +15,7 @@ class BlogController extends Controller
             $item->url = route('blog.show', ['blog' => $item]);
             return $item;
         });
-        return view('blog.index', ['title' =>  __('strings.blog_titulo1'), 'subtitle' => __('strings.blog_subtitulo1'), 'image' => asset('storage/images/VOSTSITE_0053.jpg'), 'posts' => $posts, 'links' => $links, 'halfHeight' => true]);
+        return view('blog.index', ['title' =>  __('strings.blog_titulo1'), 'subtitle' => __('strings.blog_subtitulo1'), 'image' => getRandomHero(), 'posts' => $posts, 'links' => $links, 'halfHeight' => true]);
     }
 
     /**
