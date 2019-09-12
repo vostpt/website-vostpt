@@ -12,6 +12,7 @@ yarn-error.log
 /public/css/app.css
 /public/js/app.js
 /public/fonts/vendor/
+/storage/medialibrary/temp
 
 # IntelliJ project files
 *.iml
