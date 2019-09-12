@@ -30,7 +30,7 @@ class WelcomeController extends Controller
         return view('welcome', [
             'title' =>  __('strings.home_titulo1'),
             'subtitle' => __('strings.home_subtitulo1'),
-            'image' => asset('storage/images/VOSTSITE_0053.jpg'),
+            'image' => getRandomHero(),
             'posts'=> $posts,
             'testimonials' => $testimonials
             ]);
