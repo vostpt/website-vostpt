@@ -10,7 +10,7 @@ use App\Subscription;
 class ContactController extends Controller
 {
     public function index() {
-        return view('contact', ['title' =>  __('strings.contacto_titulo1'), 'subtitle' => __('strings.contacto_subtitulo1'), 'image' => asset('storage/images/VOSTSITE_0053.jpg')]);
+        return view('contact', ['title' =>  __('strings.contacto_titulo1'), 'subtitle' => __('strings.contacto_subtitulo1'), 'image' => getRandomHero()]);
     }
 
     public function store(Request $request) {

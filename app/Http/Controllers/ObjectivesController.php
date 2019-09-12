@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class ObjectivesController extends Controller
 {
     public function index() {
-        return view('objectives', ['title' =>  __('strings.objectivos_titulo1'), 'subtitle' => __('strings.objectivos_subtitulo1'), 'image' => asset('storage/images/VOSTSITE_0052.jpg')]);
+        return view('objectives', ['title' =>  __('strings.objectivos_titulo1'), 'subtitle' => __('strings.objectivos_subtitulo1'), 'image' => getRandomHero()]);
     }
 }
