@@ -18,6 +18,6 @@ class WhoAreWeController extends Controller
                 'body' => $item->bio
             ];
         });
-        return view('who_are_we', ['title' =>  __('strings.somos_titulo1'), 'subtitle' => __('strings.somos_subtitulo1'), 'image' => asset('storage/VOSTSITE_0052.jpg'), 'arrayMembers' => $arrayMembers]);
+        return view('who_are_we', ['title' =>  __('strings.somos_titulo1'), 'subtitle' => __('strings.somos_subtitulo1'), 'image' => asset('storage/images/VOSTSITE_0052.jpg'), 'arrayMembers' => $arrayMembers]);
     }
 }

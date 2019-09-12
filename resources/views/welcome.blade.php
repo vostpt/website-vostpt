@@ -5,7 +5,7 @@
     @sectionRow([ 'sectionSubtitle' => __('strings.home_text1') ])
     @endsectionRow
 
-    @sectionRow([ 'paralaxImage' => asset('storage/VOSTSITE_0060.jpg')])
+    @sectionRow([ 'paralaxImage' => asset('storage/images/VOSTSITE_0060.jpg')])
         @include('partials.iconCard',[
                     'cards' => [
                         ['fontClass' =>  'fa fa-users', 'title' => __('strings.home_titulo2'), 'body' => __('strings.home_text2')],
