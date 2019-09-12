@@ -26,6 +26,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Schema::defaultStringLength(191);
         //blade components
         Blade::component('components.sectionRow', 'sectionRow');
 
