@@ -14,15 +14,17 @@
 
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('who_are_we') }}">@lang('buttons.who_are_we')</a>
+                <li class="nav-item dropdown">
+                    <a id="navbarDropdownAbout" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            @lang('buttons.about_us')<span class="caret"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownAbout">
+                        <a class="dropdown-item" href="{{ route('who_are_we') }}">@lang('buttons.who_are_we')</a>
+                        <a class="dropdown-item" href="{{ route('mission') }}">@lang('buttons.mission')</a>
+                        <a class="dropdown-item" href="{{ route('objectives') }}">@lang('buttons.objectives')</a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('mission') }}">@lang('buttons.mission')</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('objectives') }}">@lang('buttons.objectives')</a>
-                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('blog') }}">@lang('buttons.blog')</a>
                 </li>
@@ -32,10 +34,9 @@
                             @lang('buttons.more')<span class="caret"></span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenu">
-                        <a class="dropdown-item" href="{{ route('vost_feed') }}">@lang('buttons.vost_feed')</a>
                         <a class="dropdown-item" href="{{ route('contact') }}">@lang('buttons.contact')</a>
+                        <a class="dropdown-item" href="{{ route('vost_feed') }}">@lang('buttons.vost_feed')</a>
                         <a class="dropdown-item" href="{{ route('media') }}">@lang('buttons.media')</a>
-                        <a class="dropdown-item" href="{{ route('privacy_policy') }}">@lang('buttons.privacy_policy')</a>
                     </div>
                 </li>
 
