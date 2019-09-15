@@ -9,6 +9,7 @@ return [
     |
     |
     */
+    'about_us' => 'Sobre Nós',
     'who_are_we' => 'Quem somos',
     'mission' => 'Missão',
     'objectives' => 'Objectivos',
