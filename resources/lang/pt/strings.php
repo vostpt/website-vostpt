@@ -20,7 +20,6 @@ return [
     'home_titulo8' => 'CONTACTOS',
     'home_titulo9' => 'CHAT',
     'home_titulo10' => 'COMO PARTICIPAR',
-    'home_titulo11' => 'INSTITUCIONAL',
     'home_titulo12' => 'REDES SOCIAIS',
 
     'home_subtitulo1' => 'Voluntários Digitais Em Situações de Emergência',
