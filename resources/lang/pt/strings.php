@@ -18,7 +18,6 @@ return [
     'home_titulo6' => 'Testemunhos',
     'home_titulo7' => 'POSTS MAIS RECENTES',
     'home_titulo8' => 'CONTACTOS',
-    'home_titulo9' => 'CHAT',
     'home_titulo10' => 'COMO PARTICIPAR',
     'home_titulo12' => 'REDES SOCIAIS',
 
