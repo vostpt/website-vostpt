@@ -37,9 +37,6 @@
                 ])
     @endsectionRow
 
-    @sectionRow([ 'sectionTitle' => __('strings.home_titulo8') ])
-    @endsectionRow
-
     @sectionRow([ 'sectionTitle' => __('strings.home_titulo10') ])
     @endsectionRow
 
