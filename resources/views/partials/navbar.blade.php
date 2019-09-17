@@ -29,15 +29,8 @@
                     <a class="nav-link" href="{{ route('blog') }}">@lang('buttons.blog')</a>
                 </li>
 
-                <li class="nav-item dropdown">
-                    <a id="navbarDropdownMenu" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                            @lang('buttons.more')<span class="caret"></span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenu">
-                        <a class="dropdown-item" href="{{ route('contact') }}">@lang('buttons.contact')</a>
-                        <a class="dropdown-item" href="{{ route('vost_feed') }}">@lang('buttons.vost_feed')</a>
-                        <a class="dropdown-item" href="{{ route('media') }}">@lang('buttons.media')</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('contact') }}">@lang('buttons.contact')</a>
                 </li>
 
                 <li class="nav-item dropdown">

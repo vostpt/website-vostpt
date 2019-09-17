@@ -66,7 +66,6 @@
         <div class="bottom-footer-content">
             <ul class="footer-menu float-left">
                 <li><a href="{{ url('/') }}">Home</a> </li>
-                <li><a href="{{ route('media') }}">@lang('buttons.media')</a> </li>
                 <li><a href="{{ route('contact') }}">@lang('buttons.contact')</a> </li>
                 <li><a href="{{ route('privacy_policy') }}">@lang('buttons.privacy_policy')</a> </li>
             </ul>
