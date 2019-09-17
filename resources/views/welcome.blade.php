@@ -16,7 +16,16 @@
                 ])
     @endsectionRow
 
-    @sectionRow(['sectionTitle' => __('strings.home_titulo5')])
+    @sectionRow([
+        'sectionTitle' => __('strings.home_titulo5'),
+        'hideOnSmallerThan' => 'xl',
+    ])
+        @include('partials.carouselImageCard',[
+                    'columnMax' => 3,
+                    'autoplay' => true,
+                    'fixedHeight' => '470px',
+                    'cards' => $members
+                ])
     @endsectionRow
 
     @sectionRow([
