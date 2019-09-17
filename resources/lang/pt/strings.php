@@ -11,24 +11,24 @@ return [
     */
     //HOME
     'home_titulo1' => 'VOST PORTUGAL',
-    'home_titulo2' => 'Quem Somos',
-    'home_titulo3' => 'Missão',
-    'home_titulo4' => 'Objectivos',
+    'home_titulo2' => 'QUEM SOMOS',
+    'home_titulo3' => 'O QUE FAZEMOS',
+    'home_titulo4' => 'PORQUE O FAZEMOS',
+    'home_titulo13' => 'COMO PARTICIPAR?',
     'home_titulo5' => 'A NOSSA EQUIPA',
     'home_titulo6' => 'Testemunhos',
     'home_titulo7' => 'POSTS MAIS RECENTES',
-    'home_titulo8' => 'CONTACTOS',
-    'home_titulo9' => 'CHAT',
     'home_titulo10' => 'COMO PARTICIPAR',
-    'home_titulo11' => 'INSTITUCIONAL',
     'home_titulo12' => 'REDES SOCIAIS',
 
     'home_subtitulo1' => 'Voluntários Digitais Em Situações de Emergência',
 
     'home_text1' => 'A VOST Portugal é um grupo de voluntários que actua nas redes sociais com o objectivo de informar a população, promovendo a difusão das mensagens oficiais e canalizando os pedidos das populações às entidades responsáveis em casos de fenómenos meteorológicos adversos ou catástrofes naturais.',
-    'home_text2' => 'A realidade mais provável seria  que muitos de nós nunca nos iríamos conhecer, ou estabelecer uma relação de amizade profunda, se não tivéssemos todos, sem excepção, uma qualidade em comum: quando sentimos que outros estão em dificuldades, queremos de imediato ajudar, estabelecendo uma rede de boa vontade com todos os que temos ao nosso alcance para a estender aos que mais precisam.',
-    'home_text3' => 'A VOST Portugal tem como missão primária difundir nas redes sociais as comunicações das entidades oficiais e de ajudar todos os afectados, directa ou indirectamente, por uma catástrofe natural, através da partilha de informação validada e actualizada sempre que assim se justificar.',
-    'home_text4' => 'O objetivo principal da VOST Portugal é o mesmo das suas congéneres europeias: ser a extensão digital de comunicação das entidades oficiais em caso de fenómenos meteorológicos ou catástrofes naturais e ser um canal de apoio à população encaminhando as situações reportadas às autoridades competentes.',
+
+    'home_text2' => 'Somos um grupo de pessoas espalhadas por todo o território continental, ilhas, e também no estrangeiro. Fundada por 8 pessoas, a VOST Portugal conta hoje com mais de 120 voluntários digitais, com os mais variados perfis e competências',
+    'home_text3' => 'A equipa da VOST Portugal amplifica mensagens oficiais e valida informação recolhida nas redes sociais, e outras redes informais de informação durante emergências. Quando não está em ativação, a VOST Portugal tem um papel pedagógico abrangendo vários temas, desde a auto-protecção a esclarecimentos sobre caravelas portuguesas: todo um mundo de informação.',
+    'home_text4' => 'Todos os voluntários da VOST Portugal acreditam que a sociedade civil tem um papel muito importante a desempenhar em situações de emergência, antes, durante, e depois das mesmas. Ajudar com informação em tempo real, ferramentas digitais, e uma comunicação acessível a maneira que temos de contribuir para uma sociedade que se quer mais informada e mais preparada.',
+    'home_text13' => 'Se te revês naquilo que fazemos, e porque o fazemos, na VOST Portugal podes encontrar um espaço onde contribuir com as tuas valências. Basta clicares no icon acima e preencher o formulário, que entraremos em contacto contigo.',
 
     //Quem somos
     'somos_titulo1'=> 'Quem somos',
