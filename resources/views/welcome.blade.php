@@ -8,9 +8,10 @@
     @sectionRow([ 'paralaxImage' => asset('storage/images/VOSTSITE_0060.jpg')])
         @include('partials.iconCard',[
                     'cards' => [
-                        ['fontClass' =>  'fa fa-users', 'title' => __('strings.home_titulo2'), 'body' => __('strings.home_text2')],
-                        ['fontClass' =>  'fa fa-check', 'title' => __('strings.home_titulo3'), 'body' => __('strings.home_text3')],
-                        ['fontClass' =>  'fa fa-wrench', 'title' => __('strings.home_titulo4'), 'body' => __('strings.home_text4')]
+                        ['fontClass' =>  'fa fa-comment', 'title' => __('strings.home_titulo2'), 'body' => __('strings.home_text2')],
+                        ['fontClass' =>  'fa fa-sync-alt', 'title' => __('strings.home_titulo3'), 'body' => __('strings.home_text3')],
+                        ['fontClass' =>  'fa fa-dot-circle', 'title' => __('strings.home_titulo4'), 'body' => __('strings.home_text4')],
+                        ['fontClass' =>  'fa fa-user-edit', 'title' => __('strings.home_titulo13'), 'body' => __('strings.home_text13')],
                     ]
                 ])
     @endsectionRow
