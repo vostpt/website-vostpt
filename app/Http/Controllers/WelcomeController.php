@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Member;
 use Illuminate\Http\Request;
 use App\Post;
 use App\Testimonial;
@@ -9,6 +10,15 @@ use App\Testimonial;
 class WelcomeController extends Controller
 {
     public function index() {
+        $members = Member::all()->shuffle();
+        $arrayMembers = $members->map(function ($item) {
+            return [
+                'image' => $item->avatar,
+                'title' => $item->name,
+                'subtitle' => $item->role,
+                'body' => $item->bio
+            ];
+        });
 
         $posts = Post::orderBy('featured', 'desc')->orderBy('created_at', 'desc')->take(3)->get();
         $posts = $posts->map(function ($item) {
@@ -32,7 +42,8 @@ class WelcomeController extends Controller
             'subtitle' => __('strings.home_subtitulo1'),
             'image' => getRandomHero(),
             'posts'=> $posts,
-            'testimonials' => $testimonials
+            'testimonials' => $testimonials,
+            'members' => $arrayMembers
             ]);
     }
 }

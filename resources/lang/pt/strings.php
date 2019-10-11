@@ -18,8 +18,6 @@ return [
     'home_titulo5' => 'A NOSSA EQUIPA',
     'home_titulo6' => 'Testemunhos',
     'home_titulo7' => 'POSTS MAIS RECENTES',
-    'home_titulo10' => 'COMO PARTICIPAR',
-    'home_titulo12' => 'REDES SOCIAIS',
 
     'home_subtitulo1' => 'Voluntários Digitais Em Situações de Emergência',
 
