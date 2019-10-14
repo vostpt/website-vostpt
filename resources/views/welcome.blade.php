@@ -47,4 +47,13 @@
                 ])
     @endsectionRow
 
+    @sectionRow([])
+        @include('partials.iconCard',[
+                    'cards' => [
+                        ['fontClass' =>  'fab fa-twitter', 'title' => 'Twitter', 'body' => ''],
+                        ['fontClass' =>  'fab fa-facebook', 'title' =>'Facebook', 'body' => ''],
+                        ['fontClass' =>  'fab fa-instagram', 'title' => 'Instagram', 'body' => ''],
+                    ]
+                ])
+    @endsectionRow
 @endsection
